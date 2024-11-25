@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "morevillagers",
+  "version": "${version}",
+  "name": "MoreVillagers",
+  "accessWidener": "morevillagers.accesswidener",
+  "description": "Adds new villager jobs, trades, and workstations!",
+  "authors": [
+    "frikinjay"
+  ],
+  "contact": {
+    "homepage": "https://github.com/frikinjay/morevillagers"
+  },
+  "license": "MIT",
+  "icon": "icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.frikinjay.morevillagers.fabric.MoreVillagersFabric"
+    ],
+    "client": [
+    ]
+  },
+  "mixins": [
+    "morevillagers-fabric.mixins.json",
+    "morevillagers.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.9",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

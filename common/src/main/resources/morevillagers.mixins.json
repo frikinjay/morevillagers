@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "package": "com.frikinjay.morevillagers.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "minVersion": "0.8",
+  "client": [
+  ],
+  "mixins": [
+    "GiveGiftToHeroAccessor",
+    "PoiTypesInvoker",
+    "StructureTemplatePoolAccessor"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

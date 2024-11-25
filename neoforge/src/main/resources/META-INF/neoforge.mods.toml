@@ -1,0 +1,38 @@
+modLoader = "javafml"
+loaderVersion = "[2,)"
+#issueTrackerURL = ""
+license = "MIT"
+
+[[mods]]
+modId = "morevillagers"
+version = "${version}"
+displayName = "MoreVillagers"
+authors = "frikinjay"
+description = '''
+Adds new villager jobs, trades, and workstations!
+'''
+logoFile = "icon.png"
+
+[[dependencies.morevillagers]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.morevillagers]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+
+[[mixins]]
+config = "morevillagers.mixins.json"
+
+[[mixins]]
+config = "morevillagers-neoforge.mixins.json"
+
+[[accessTransformers]]
+file="META-INF/accesstransformer.cfg"
