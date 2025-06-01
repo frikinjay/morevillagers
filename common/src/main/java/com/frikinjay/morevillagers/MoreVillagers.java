@@ -18,7 +18,7 @@ import net.minecraft.world.level.levelgen.structure.templatesystem.StructureProc
 public class MoreVillagers
 {
     public static final String MOD_ID = "morevillagers";
-    public static final String AETHER_ID = "aether";
+    //public static final String AETHER_ID = "aether";
     public static final ResourceKey<CreativeModeTab> TAB = ResourceKey.create(Registries.CREATIVE_MODE_TAB, new ResourceLocation(MOD_ID, "tab"));
 
     public static void init() {

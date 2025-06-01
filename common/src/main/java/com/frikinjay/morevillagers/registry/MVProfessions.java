@@ -33,6 +33,8 @@ public class MVProfessions {
             () -> new VillagerProfession("hunter", holder -> holder.value().equals(MVPoiTypes.HUNTER_POI.get()), holder -> holder.value().equals(MVPoiTypes.HUNTER_POI.get()), ImmutableSet.of(), ImmutableSet.of(), SoundEvents.VILLAGER_WORK_FLETCHER));
     public static final Supplier<VillagerProfession> MINER = CommonPlatformHelper.registerProfession("miner",
             () -> new VillagerProfession("miner", holder -> holder.value().equals(MVPoiTypes.MINER_POI.get()), holder -> holder.value().equals(MVPoiTypes.MINER_POI.get()), ImmutableSet.of(), ImmutableSet.of(), SoundEvents.VILLAGER_WORK_ARMORER));
+    public static final Supplier<VillagerProfession> ICEMAN = CommonPlatformHelper.registerProfession("iceman",
+            () -> new VillagerProfession("iceman", holder -> holder.value().equals(MVPoiTypes.ICEMAN_POI.get()), holder -> holder.value().equals(MVPoiTypes.ICEMAN_POI.get()), ImmutableSet.of(), ImmutableSet.of(), SoundEvents.VILLAGER_WORK_TOOLSMITH));
 
     public static void fillTradeData() {
         // OCEANOGRAPHER TRADES
@@ -210,7 +212,7 @@ public class MVProfessions {
         };
         VillagerTrades.ItemListing[] minerLevel2 = new VillagerTrades.ItemListing[]{
                 new VillagerTrades.EmeraldForItems(Items.RAW_COPPER,15,16,10),
-                new VillagerTrades.EmeraldForItems(Items.RAW_IRON,12,16,10),
+                new VillagerTrades.EmeraldForItems(Items.RAW_IRON,12,16,10)
         };
         VillagerTrades.ItemListing[] minerLevel3 = new VillagerTrades.ItemListing[]{
                 new VillagerTrades.EmeraldForItems(Items.RAW_GOLD,10,16,20),
@@ -225,6 +227,29 @@ public class MVProfessions {
                 new VillagerTrades.TreasureMapForEmeralds(15, MVTags.ON_ANCIENT_CITY_EXPLORER_MAPS, "filled_map.ancient_city", MapDecorationTypes.BLUE_MARKER, 12, 15)
         };
         VillagerTrades.TRADES.put(MINER.get(),toIntMap(ImmutableMap.of(1,minerLevel1,2,minerLevel2,3,minerLevel3,4,minerLevel4,5,minerLevel5)));
+
+        // ICEMAN TRADES
+        VillagerTrades.ItemListing[] icemanLevel1 = new VillagerTrades.ItemListing[]{
+                new VillagerTrades.EmeraldForItems(Items.SPRUCE_LOG,20,16,2),
+                new VillagerTrades.ItemsForEmeralds(Items.ICE, 1, 8, 8, 1)
+        };
+        VillagerTrades.ItemListing[] icemanLevel2 = new VillagerTrades.ItemListing[]{
+                new VillagerTrades.EmeraldForItems(Items.FERN,3,4,10, 4),
+                new VillagerTrades.EmeraldForItems(Items.POWDER_SNOW_BUCKET,1, 2, 12, 10)
+        };
+        VillagerTrades.ItemListing[] icemanLevel3 = new VillagerTrades.ItemListing[]{
+                new VillagerTrades.EmeraldForItems(Items.SNOW_BLOCK,6,8,10),
+                new VillagerTrades.ItemsForEmeralds(Items.PACKED_ICE, 4,4,10)
+        };
+        VillagerTrades.ItemListing[] icemanLevel4 = new VillagerTrades.ItemListing[]{
+                new VillagerTrades.EmeraldForItems(Items.RED_WOOL,8,4,20),
+                new VillagerTrades.ItemsForEmeralds(Items.RABBIT_HIDE, 24,2,10)
+        };
+        VillagerTrades.ItemListing[] icemanLevel5 = new VillagerTrades.ItemListing[]{
+                new VillagerTrades.EnchantedItemForEmeralds(Items.DIAMOND_SHOVEL, 12, 3, 15, 0.2F),
+                new VillagerTrades.ItemsForEmeralds(Items.BLUE_ICE, 8,4,20)
+        };
+        VillagerTrades.TRADES.put(ICEMAN.get(),toIntMap(ImmutableMap.of(1,icemanLevel1,2,icemanLevel2,3,icemanLevel3,4,icemanLevel4,5,icemanLevel5)));
     }
 
     private static Int2ObjectMap<VillagerTrades.ItemListing[]> toIntMap(ImmutableMap<Integer, VillagerTrades.ItemListing[]> p_221238_0_) {
