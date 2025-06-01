@@ -1,8 +1,8 @@
 package com.frikinjay.morevillagers.registry;
 
+import com.frikinjay.morevillagers.platform.CommonPlatformHelper;
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.ImmutableSet;
-import com.frikinjay.morevillagers.platform.CommonPlatformHelper;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
 import it.unimi.dsi.fastutil.ints.Int2ObjectOpenHashMap;
 import net.minecraft.sounds.SoundEvents;
@@ -17,22 +17,24 @@ import java.util.function.Supplier;
 public class MVProfessions {
     public static void init() {}
 
-    public static final Supplier<VillagerProfession> OCEANOGRAPHER = CommonPlatformHelper.registerProfession("oceanographer",
+    public static final Supplier<VillagerProfession> OCEANOGRAPHER = CommonPlatformHelper.registerMVProfession("oceanographer",
             () -> new VillagerProfession("oceanographer", holder -> holder.value().equals(MVPoiTypes.OCEANOGRAPHER_POI.get()), holder -> holder.value().equals(MVPoiTypes.OCEANOGRAPHER_POI.get()), ImmutableSet.of(), ImmutableSet.of(), SoundEvents.VILLAGER_WORK_CARTOGRAPHER));
-    public static final Supplier<VillagerProfession> NETHERIAN = CommonPlatformHelper.registerProfession("netherian",
+    public static final Supplier<VillagerProfession> NETHERIAN = CommonPlatformHelper.registerMVProfession("netherian",
             () -> new VillagerProfession("netherian", holder -> holder.value().equals(MVPoiTypes.NETHERIAN_POI.get()), holder -> holder.value().equals(MVPoiTypes.NETHERIAN_POI.get()), ImmutableSet.of(), ImmutableSet.of(), SoundEvents.VILLAGER_WORK_BUTCHER));
-    public static final Supplier<VillagerProfession> WOODWORKER = CommonPlatformHelper.registerProfession("woodworker",
+    public static final Supplier<VillagerProfession> WOODWORKER = CommonPlatformHelper.registerMVProfession("woodworker",
             () -> new VillagerProfession("woodworker", holder -> holder.value().equals(MVPoiTypes.WOODWORKER_POI.get()), holder -> holder.value().equals(MVPoiTypes.WOODWORKER_POI.get()), ImmutableSet.of(), ImmutableSet.of(), SoundEvents.VILLAGER_WORK_LEATHERWORKER));
-    public static final Supplier<VillagerProfession> ENDERIAN = CommonPlatformHelper.registerProfession("enderian",
+    public static final Supplier<VillagerProfession> ENDERIAN = CommonPlatformHelper.registerMVProfession("enderian",
             () -> new VillagerProfession("enderian", holder -> holder.value().equals(MVPoiTypes.ENDERIAN_POI.get()), holder -> holder.value().equals(MVPoiTypes.ENDERIAN_POI.get()), ImmutableSet.of(), ImmutableSet.of(), SoundEvents.VILLAGER_WORK_BUTCHER));
-    public static final Supplier<VillagerProfession> ENGINEER = CommonPlatformHelper.registerProfession("engineer",
+    public static final Supplier<VillagerProfession> ENGINEER = CommonPlatformHelper.registerMVProfession("engineer",
             () -> new VillagerProfession("engineer", holder -> holder.value().equals(MVPoiTypes.ENGINEER_POI.get()), holder -> holder.value().equals(MVPoiTypes.ENGINEER_POI.get()), ImmutableSet.of(), ImmutableSet.of(), SoundEvents.VILLAGER_WORK_TOOLSMITH));
-    public static final Supplier<VillagerProfession> FLORIST = CommonPlatformHelper.registerProfession("florist",
+    public static final Supplier<VillagerProfession> FLORIST = CommonPlatformHelper.registerMVProfession("florist",
             () -> new VillagerProfession("florist", holder -> holder.value().equals(MVPoiTypes.FLORIST_POI.get()), holder -> holder.value().equals(MVPoiTypes.FLORIST_POI.get()), ImmutableSet.of(), ImmutableSet.of(), SoundEvents.VILLAGER_WORK_FARMER));
-    public static final Supplier<VillagerProfession> HUNTER = CommonPlatformHelper.registerProfession("hunter",
+    public static final Supplier<VillagerProfession> HUNTER = CommonPlatformHelper.registerMVProfession("hunter",
             () -> new VillagerProfession("hunter", holder -> holder.value().equals(MVPoiTypes.HUNTER_POI.get()), holder -> holder.value().equals(MVPoiTypes.HUNTER_POI.get()), ImmutableSet.of(), ImmutableSet.of(), SoundEvents.VILLAGER_WORK_FLETCHER));
-    public static final Supplier<VillagerProfession> MINER = CommonPlatformHelper.registerProfession("miner",
+    public static final Supplier<VillagerProfession> MINER = CommonPlatformHelper.registerMVProfession("miner",
             () -> new VillagerProfession("miner", holder -> holder.value().equals(MVPoiTypes.MINER_POI.get()), holder -> holder.value().equals(MVPoiTypes.MINER_POI.get()), ImmutableSet.of(), ImmutableSet.of(), SoundEvents.VILLAGER_WORK_ARMORER));
+    public static final Supplier<VillagerProfession> ICEMAN = CommonPlatformHelper.registerMVProfession("iceman",
+            () -> new VillagerProfession("iceman", holder -> holder.value().equals(MVPoiTypes.ICEMAN_POI.get()), holder -> holder.value().equals(MVPoiTypes.ICEMAN_POI.get()), ImmutableSet.of(), ImmutableSet.of(), SoundEvents.VILLAGER_WORK_TOOLSMITH));
 
     public static void fillTradeData() {
         // OCEANOGRAPHER TRADES
@@ -225,6 +227,29 @@ public class MVProfessions {
                 new VillagerTrades.TreasureMapForEmeralds(15, MVTags.ON_ANCIENT_CITY_EXPLORER_MAPS, "filled_map.ancient_city", MapDecorationTypes.BLUE_MARKER, 12, 15)
         };
         VillagerTrades.TRADES.put(MINER.get(),toIntMap(ImmutableMap.of(1,minerLevel1,2,minerLevel2,3,minerLevel3,4,minerLevel4,5,minerLevel5)));
+
+        // ICEMAN TRADES
+        VillagerTrades.ItemListing[] icemanLevel1 = new VillagerTrades.ItemListing[]{
+                new VillagerTrades.EmeraldForItems(Items.SPRUCE_LOG,20,16,2),
+                new VillagerTrades.ItemsForEmeralds(Items.ICE, 1, 8, 8, 1)
+        };
+        VillagerTrades.ItemListing[] icemanLevel2 = new VillagerTrades.ItemListing[]{
+                new VillagerTrades.EmeraldForItems(Items.FERN,3,4,10, 4),
+                new VillagerTrades.EmeraldForItems(Items.POWDER_SNOW_BUCKET,1, 2, 12, 10)
+        };
+        VillagerTrades.ItemListing[] icemanLevel3 = new VillagerTrades.ItemListing[]{
+                new VillagerTrades.EmeraldForItems(Items.SNOW_BLOCK,6,8,10),
+                new VillagerTrades.ItemsForEmeralds(Items.PACKED_ICE, 4,4,10)
+        };
+        VillagerTrades.ItemListing[] icemanLevel4 = new VillagerTrades.ItemListing[]{
+                new VillagerTrades.EmeraldForItems(Items.RED_WOOL,8,4,20),
+                new VillagerTrades.ItemsForEmeralds(Items.RABBIT_HIDE, 24,2,10)
+        };
+        VillagerTrades.ItemListing[] icemanLevel5 = new VillagerTrades.ItemListing[]{
+                new VillagerTrades.EnchantedItemForEmeralds(Items.DIAMOND_SHOVEL, 12, 3, 15, 0.2F),
+                new VillagerTrades.ItemsForEmeralds(Items.BLUE_ICE, 8,4,20)
+        };
+        VillagerTrades.TRADES.put(ICEMAN.get(),toIntMap(ImmutableMap.of(1,icemanLevel1,2,icemanLevel2,3,icemanLevel3,4,icemanLevel4,5,icemanLevel5)));
     }
 
     private static Int2ObjectMap<VillagerTrades.ItemListing[]> toIntMap(ImmutableMap<Integer, VillagerTrades.ItemListing[]> p_221238_0_) {

@@ -1,6 +1,5 @@
 plugins {
     id 'com.github.johnrengelman.shadow'
-    id 'io.github.0ffz.github-packages' version '[1,2)'
 }
 
 architectury {
@@ -28,16 +27,6 @@ configurations {
 repositories {
     maven { url "https://maven.shedaniel.me/" }
     maven { url "https://maven.terraformersmc.com/releases" }
-
-    maven { url = "https://maven.wispforest.io" }
-    maven { url = "https://maven.wispforest.io/releases" }
-
-    maven { url = "https://raw.githubusercontent.com/Fuzss/modresources/main/maven/" }
-
-    maven { url = "https://mvn.devos.one/snapshots/" } // Registrate, Porting Lib, Forge Tags, Milk Lib
-    maven { url = "https://repo.greenhouse.house/snapshots/" } // Temporary Porting Lib\
-
-    maven githubPackage.invoke("The-Aether-Team/The-Aether")
 }
 
 dependencies {
@@ -51,10 +40,6 @@ dependencies {
     modImplementation "com.terraformersmc:modmenu:${project.modmenu_version}", {
         exclude module: "fabric-api"
     }
-
-    //implementation(annotationProcessor("io.github.llamalad7:mixinextras-fabric:${project.mixin_extra_version}"))
-
-    //modImplementation "com.aetherteam.aether:aether:${project.aether_version_fabric}"
 
     common(project(path: ':common', configuration: 'namedElements')) { transitive false }
     shadowBundle project(path: ':common', configuration: 'transformProductionFabric')

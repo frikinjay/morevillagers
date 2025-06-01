@@ -8,6 +8,18 @@
   "block.morevillagers.hunting_post": "Hunting Post",
   "block.morevillagers.mining_bench": "Mining Bench",
   "block.morevillagers.gilded_station": "Gilded Station",
+  "block.morevillagers.chiller": "Chiller",
+
+  "item.morevillagers.oceanography_table": "Oceanography Table",
+  "item.morevillagers.woodworking_table": "Forestry Bench",
+  "item.morevillagers.decayed_workbench": "Decayed Workbench",
+  "item.morevillagers.purpur_altar": "Purpur Altar",
+  "item.morevillagers.blueprint_table": "Blueprint Table",
+  "item.morevillagers.gardening_table": "Gardening Table",
+  "item.morevillagers.hunting_post": "Hunting Post",
+  "item.morevillagers.mining_bench": "Mining Bench",
+  "item.morevillagers.gilded_station": "Gilded Station",
+  "item.morevillagers.chiller": "Chiller",
 
   "filled_map.bastion_remnant": "Bastion Explorer Map",
   "filled_map.fortress": "Fortress Explorer Map",
@@ -29,6 +41,7 @@
   "entity.minecraft.villager.morevillagers.hunter": "Hunter",
   "entity.minecraft.villager.morevillagers.miner": "Miner",
   "entity.minecraft.villager.morevillagers.ascended": "Ascended",
+  "entity.minecraft.villager.morevillagers.iceman": "Iceman",
 
   "entity.minecraft.villager.oceanographer": "Oceanographer",
   "entity.minecraft.villager.netherian": "Netherologist",
@@ -39,6 +52,7 @@
   "entity.minecraft.villager.hunter": "Hunter",
   "entity.minecraft.villager.miner": "Miner",
   "entity.minecraft.villager.ascended": "Ascended",
+  "entity.minecraft.villager.iceman": "Iceman",
 
   "advancements.all_professions_traded.title": "Frequent Customer",
   "advancements.all_professions_traded.description": "Trade with every villager profession",

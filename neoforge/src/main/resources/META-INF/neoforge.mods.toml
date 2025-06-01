@@ -6,12 +6,12 @@ license = "MIT"
 [[mods]]
 modId = "morevillagers"
 version = "${version}"
-displayName = "MoreVillagers"
+displayName = "More Villagers: Re-employed"
 authors = "frikinjay"
 description = '''
 Adds new villager jobs, trades, and workstations!
 '''
-logoFile = "icon.png"
+#logoFile = ""
 
 [[dependencies.morevillagers]]
 modId = "neoforge"
@@ -23,7 +23,7 @@ side = "BOTH"
 [[dependencies.morevillagers]]
 modId = "minecraft"
 type = "required"
-versionRange = "[1.21.1,)"
+versionRange = "[1.21.2,)"
 ordering = "NONE"
 side = "BOTH"
 

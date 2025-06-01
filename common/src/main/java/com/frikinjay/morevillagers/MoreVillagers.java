@@ -1,11 +1,9 @@
 package com.frikinjay.morevillagers;
 
 import com.frikinjay.morevillagers.platform.ConfigHelper;
-import com.frikinjay.morevillagers.registry.MVBlocks;
-import com.frikinjay.morevillagers.registry.MVGifts;
-import com.frikinjay.morevillagers.registry.MVPoiTypes;
-import com.frikinjay.morevillagers.registry.MVProfessions;
+import com.frikinjay.morevillagers.registry.*;
 import com.frikinjay.morevillagers.util.JigsawHelper;
+import net.minecraft.core.HolderLookup;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
@@ -19,24 +17,26 @@ public class MoreVillagers
 {
     public static final String MOD_ID = "morevillagers";
     public static final String AETHER_ID = "aether";
-    public static final ResourceKey<CreativeModeTab> TAB = ResourceKey.create(Registries.CREATIVE_MODE_TAB, new ResourceLocation(MOD_ID, "tab"));
+    public static final ResourceKey<CreativeModeTab> TAB = ResourceKey.create(Registries.CREATIVE_MODE_TAB, ResourceLocation.fromNamespaceAndPath(MOD_ID, "tab"));
 
     public static void init() {
         MVBlocks.init();
+        MVItems.init();
         MVPoiTypes.init();
         MVProfessions.init();
         MVGifts.init();
     }
 
     public static void registerJigsaws(MinecraftServer server) {
-        Registry<StructureTemplatePool> templatePoolRegistry = server.registryAccess().registry(Registries.TEMPLATE_POOL).orElseThrow();
-        Registry<StructureProcessorList> processorListRegistry = server.registryAccess().registry(Registries.PROCESSOR_LIST).orElseThrow();
+        HolderLookup.Provider registryProvider = server.registryAccess();
+        HolderLookup<StructureTemplatePool> templatePoolRegistry = registryProvider.lookupOrThrow(Registries.TEMPLATE_POOL);
+        HolderLookup<StructureProcessorList> processorListRegistry = registryProvider.lookupOrThrow(Registries.PROCESSOR_LIST);
 
-        ResourceLocation plainsPoolLocation = new ResourceLocation("minecraft", "village/plains/houses");
-        ResourceLocation desertPoolLocation = new ResourceLocation("minecraft", "village/desert/houses");
-        ResourceLocation savannaPoolLocation = new ResourceLocation("minecraft", "village/savanna/houses");
-        ResourceLocation snowyPoolLocation = new ResourceLocation("minecraft", "village/snowy/houses");
-        ResourceLocation taigaPoolLocation = new ResourceLocation("minecraft", "village/taiga/houses");
+        ResourceLocation plainsPoolLocation = ResourceLocation.fromNamespaceAndPath("minecraft", "village/plains/houses");
+        ResourceLocation desertPoolLocation = ResourceLocation.fromNamespaceAndPath("minecraft", "village/desert/houses");
+        ResourceLocation savannaPoolLocation = ResourceLocation.fromNamespaceAndPath("minecraft", "village/savanna/houses");
+        ResourceLocation snowyPoolLocation = ResourceLocation.fromNamespaceAndPath("minecraft", "village/snowy/houses");
+        ResourceLocation taigaPoolLocation = ResourceLocation.fromNamespaceAndPath("minecraft", "village/taiga/houses");
 
         // PLAINS VILLAGE HOUSES
         if (ConfigHelper.generatePlainsHouses()) {
@@ -85,6 +85,6 @@ public class MoreVillagers
     }
 
     public static ResourceLocation getRL(String modid, String location) {
-        return new ResourceLocation(modid, location);
+        return ResourceLocation.fromNamespaceAndPath(modid, location);
     }
 }

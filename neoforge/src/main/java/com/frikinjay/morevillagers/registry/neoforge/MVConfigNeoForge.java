@@ -1,10 +1,10 @@
 package com.frikinjay.morevillagers.registry.neoforge;
 
 import com.frikinjay.morevillagers.MoreVillagers;
+import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.event.config.ModConfigEvent;
 import net.neoforged.neoforge.common.ModConfigSpec;
-import net.neoforged.bus.api.SubscribeEvent;
 
 @EventBusSubscriber(modid = MoreVillagers.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
 public class MVConfigNeoForge {

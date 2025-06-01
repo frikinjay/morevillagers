@@ -20,13 +20,32 @@ import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.server.ServerAboutToStartEvent;
 import net.neoforged.neoforge.registries.DeferredHolder;
-import net.neoforged.neoforge.registries.RegisterEvent;
+import net.neoforged.neoforge.registries.DeferredRegister;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.function.Supplier;
 
 @Mod(MoreVillagers.MOD_ID)
 public final class MoreVillagersNeoForge {
+
+    public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
+            DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MoreVillagers.MOD_ID);
+
+    public static final Supplier<CreativeModeTab> MORE_VILLAGERS_TAB = CREATIVE_MODE_TABS.register("tab", () ->
+            CreativeModeTab.builder()
+                    .title(Component.translatable("itemGroup." + MoreVillagers.MOD_ID + ".tab"))
+                    .icon(() -> new ItemStack(Items.EMERALD))
+                    .displayItems((params, output) -> {
+                        for (DeferredHolder<Block, ? extends Block> registeredBlock : CommonPlatformHelperImpl.BLOCKS.getEntries()) {
+                            Block block = registeredBlock.get();
+                            ItemStack stack = new ItemStack(block, 1);
+                            if (!stack.isEmpty()) {
+                                output.accept(stack);
+                            }
+                        }
+                    })
+                    .build()
+    );
+
     public MoreVillagersNeoForge(IEventBus modEventBus, ModContainer container) {
         MoreVillagers.init();
 
@@ -37,7 +56,8 @@ public final class MoreVillagersNeoForge {
         CommonPlatformHelperImpl.POI_TYPES.register(modEventBus);
         CommonPlatformHelperImpl.PROFESSIONS.register(modEventBus);
 
-        modEventBus.addListener(this::addCreativeModeTab);
+        CREATIVE_MODE_TABS.register(modEventBus);
+
         modEventBus.addListener(this::setup);
 
         NeoForge.EVENT_BUS.register(this);
@@ -47,23 +67,6 @@ public final class MoreVillagersNeoForge {
     public void onServerAboutToStartEvent(ServerAboutToStartEvent event) {
         MoreVillagers.registerJigsaws(event.getServer());
     }
-
-    private void addCreativeModeTab(RegisterEvent event) {
-        event.register(Registries.CREATIVE_MODE_TAB, (helper -> {
-            List<ItemStack> stacks = new ArrayList<>();
-            for (DeferredHolder<Block, ? extends Block> registeredBlock : CommonPlatformHelperImpl.BLOCKS.getEntries()) {
-                Block block = registeredBlock.get();
-                stacks.add(new ItemStack(block));
-            }
-            CreativeModeTab tab = CreativeModeTab.builder()
-                    .title(Component.translatable("itemGroup." + MoreVillagers.MOD_ID + ".tab"))
-                    .icon(() -> new ItemStack(Items.EMERALD))
-                    .displayItems((CreativeModeTab.ItemDisplayParameters arg, CreativeModeTab.Output populator) -> populator.acceptAll(stacks))
-                    .build();
-            helper.register(MoreVillagers.TAB, tab);
-        }));
-    }
-
 
     private void setup(final FMLCommonSetupEvent event) {
         event.enqueueWork(() -> {

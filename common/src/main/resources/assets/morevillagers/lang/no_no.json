@@ -8,6 +8,15 @@
   "block.morevillagers.hunting_post": "Jaktpost",
   "block.morevillagers.mining_bench": "Gruvedriftsbenk",
 
+  "item.morevillagers.oceanography_table": "Oseanografbenk",
+  "item.morevillagers.woodworking_table": "Skogsmesterbenk",
+  "item.morevillagers.decayed_workbench": "Forfalt Arbeidsbenk",
+  "item.morevillagers.purpur_altar": "Purpuralter",
+  "item.morevillagers.blueprint_table": "Ingeniørbord",
+  "item.morevillagers.gardening_table": "Hagearbeidsbenk",
+  "item.morevillagers.hunting_post": "Jaktpost",
+  "item.morevillagers.mining_bench": "Gruvedriftsbenk",
+
   "filled_map.bastion_remnant": "Bastion-Utforskerkart",
   "filled_map.fortress": "Festningsutforskerkart",
   "filled_map.endcity": "Endebyutforskerkart",

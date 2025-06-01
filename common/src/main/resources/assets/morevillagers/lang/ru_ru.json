@@ -8,6 +8,15 @@
   "block.morevillagers.hunting_post": "Пост охотника",
   "block.morevillagers.mining_bench": "Рабочая станция шахтёра",
 
+  "item.morevillagers.oceanography_table": "Стол океанографа",
+  "item.morevillagers.woodworking_table": "Стол лесника",
+  "item.morevillagers.decayed_workbench": "Брошеная станция",
+  "item.morevillagers.purpur_altar": "Пурпурный алтарь",
+  "item.morevillagers.blueprint_table": "Чертёжный стол",
+  "item.morevillagers.gardening_table": "Столик садовника",
+  "item.morevillagers.hunting_post": "Пост охотника",
+  "item.morevillagers.mining_bench": "Рабочая станция шахтёра",
+
   "filled_map.bastion_remnant": "Карта исследователя бастиона",
   "filled_map.fortress": "Карта исследователя крепости Незера ",
   "filled_map.endcity": "Карта исследователя города Энда",

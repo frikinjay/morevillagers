@@ -12,22 +12,22 @@ import java.util.function.Supplier;
 
 public class CommonPlatformHelper {
     @ExpectPlatform
-    public static <T extends Block> Supplier<T> registerBlock(String name, Supplier<T> block) {
+    public static <T extends Block> Supplier<T> registerMVBlock(String name, Supplier<T> block) {
         throw new AssertionError();
     }
 
     @ExpectPlatform
-    public static <T extends Item> Supplier<T> registerItem(String name, Supplier<T> item) {
+    public static <T extends Item> Supplier<T> registerMVItem(String name, Supplier<T> item) {
         throw new AssertionError();
     }
 
     @ExpectPlatform
-    public static Supplier<VillagerProfession> registerProfession(String name, Supplier<VillagerProfession> profession) {
+    public static Supplier<VillagerProfession> registerMVProfession(String name, Supplier<VillagerProfession> profession) {
         throw new AssertionError();
     }
 
     @ExpectPlatform
-    public static Supplier<PoiType> registerPoiType(String name, Supplier<Set<BlockState>> matchingStates) {
+    public static Supplier<PoiType> registerMVPoiType(String name, Supplier<Set<BlockState>> matchingStates) {
         throw new AssertionError();
     }
 

@@ -36,8 +36,9 @@ public final class MoreVillagersFabric implements ModInitializer {
                 {
                     for (Supplier<Block> registeredBlock : REGISTERED_BLOCKS) {
                         Block block = registeredBlock.get();
-                        if (block != null) {
-                            entries.accept(new ItemStack(block));
+                        ItemStack stack = new ItemStack(block, 1);
+                        if (!stack.isEmpty()) {
+                            entries.accept(stack);
                         }
                     }
                 })

@@ -8,6 +8,15 @@
   "block.morevillagers.hunting_post": "Posterunek Myśliwski",
   "block.morevillagers.mining_bench": "Mining Bench",
 
+  "item.morevillagers.oceanography_table": "Stół Oceanograficzny",
+  "item.morevillagers.woodworking_table": "Stół Leśniczy",
+  "item.morevillagers.decayed_workbench": "Zbutwiały Stół Warsztatowy",
+  "item.morevillagers.purpur_altar": "Purpurowy Ołtarz",
+  "item.morevillagers.blueprint_table": "Stół Schematów",
+  "item.morevillagers.gardening_table": "Stół Ogrodniczy",
+  "item.morevillagers.hunting_post": "Posterunek Myśliwski",
+  "item.morevillagers.mining_bench": "Mining Bench",
+
   "filled_map.bastion_remnant": "Mapa Badacza Bastionu",
   "filled_map.fortress": "Mapa Badacza Fortecy",
   "filled_map.endcity": "Mapa Badacza Miasta Endu",

@@ -8,6 +8,15 @@
   "block.morevillagers.hunting_post": "Jagdposten",
   "block.morevillagers.mining_bench": "Bergbaubank",
 
+  "item.morevillagers.oceanography_table": "Ozeanographie-Tisch",
+  "item.morevillagers.woodworking_table": "Forstbank",
+  "item.morevillagers.decayed_workbench": "Verfallene Werkbank",
+  "item.morevillagers.purpur_altar": "Purpur-Altar",
+  "item.morevillagers.blueprint_table": "Blaupausentisch",
+  "item.morevillagers.gardening_table": "Gärtnerbank",
+  "item.morevillagers.hunting_post": "Jagdposten",
+  "item.morevillagers.mining_bench": "Bergbaubank",
+
   "filled_map.bastion_remnant": "Bastion-Entdeckerkarte",
   "filled_map.fortress": "Festung-Entdeckerkarte",
   "filled_map.endcity": "Endsiedlung-Entdeckerkarte",
