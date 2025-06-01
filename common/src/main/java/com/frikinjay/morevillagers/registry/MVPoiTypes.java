@@ -17,4 +17,5 @@ public class MVPoiTypes {
     public static final Supplier<PoiType> FLORIST_POI = CommonPlatformHelper.registerPoiType("florist", () -> PoiTypesInvoker.invokeGetBlockStates(MVBlocks.GARDENING_TABLE.get()));
     public static final Supplier<PoiType> HUNTER_POI = CommonPlatformHelper.registerPoiType("hunter", () -> PoiTypesInvoker.invokeGetBlockStates(MVBlocks.HUNTING_POST.get()));
     public static final Supplier<PoiType> MINER_POI = CommonPlatformHelper.registerPoiType("miner", () -> PoiTypesInvoker.invokeGetBlockStates(MVBlocks.MINING_BENCH.get()));
+    public static final Supplier<PoiType> ICEMAN_POI = CommonPlatformHelper.registerPoiType("iceman", () -> PoiTypesInvoker.invokeGetBlockStates(MVBlocks.CHILLER.get()));
 }

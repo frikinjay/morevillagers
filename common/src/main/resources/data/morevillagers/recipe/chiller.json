@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#A#",
+    "ABA",
+    "#C#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:spruce_log"
+    },
+    "A": {
+      "item": "minecraft:ice"
+    },
+    "B": {
+      "item": "minecraft:packed_ice"
+    },
+    "C": {
+      "item": "minecraft:blue_ice"
+    }
+  },
+  "result": {
+    "id": "morevillagers:chiller"
+  }
+}

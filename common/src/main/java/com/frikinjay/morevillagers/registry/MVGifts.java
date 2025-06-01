@@ -30,6 +30,8 @@ public class MVGifts {
             "gameplay/hero_of_the_village/hunter_gift");
     public static final ResourceKey<LootTable> MINER_GIFT = registerGiftTable(
             "gameplay/hero_of_the_village/miner_gift");
+    public static final ResourceKey<LootTable> ICEMAN_GIFT = registerGiftTable(
+            "gameplay/hero_of_the_village/iceman_gift");
 
     public static void registerGiftMappings() {
         Map<VillagerProfession, ResourceKey<LootTable>> gifts = GiveGiftToHeroAccessor.getGifts();
@@ -42,6 +44,7 @@ public class MVGifts {
         registerGiftsFor(gifts, MVProfessions.FLORIST.get(), FLORIST_GIFT);
         registerGiftsFor(gifts, MVProfessions.HUNTER.get(), HUNTER_GIFT);
         registerGiftsFor(gifts, MVProfessions.MINER.get(), MINER_GIFT);
+        registerGiftsFor(gifts, MVProfessions.ICEMAN.get(), ICEMAN_GIFT);
     }
 
     private static ResourceKey<LootTable> registerGiftTable(String path) {

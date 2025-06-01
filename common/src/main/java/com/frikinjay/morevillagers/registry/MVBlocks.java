@@ -21,6 +21,7 @@ public class MVBlocks {
     public static final Supplier<Block> HUNTING_POST = registerBlock("hunting_post", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CARTOGRAPHY_TABLE)));
     public static final Supplier<Block> MINING_BENCH = registerBlock("mining_bench", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
     public static final Supplier<Block> GILDED_STATION = registerBlock("gilded_station", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CARTOGRAPHY_TABLE)));
+    public static final Supplier<Block> CHILLER = registerBlock("chiller", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CARTOGRAPHY_TABLE)));
 
     public static <T extends Block> Supplier<T> registerBlock(String name, Supplier<T> block) {
         Supplier<T> toReturn = CommonPlatformHelper.registerBlock(name, block);
