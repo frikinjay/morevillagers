@@ -33,7 +33,7 @@ villagerpacks/my_pack/
 │       ├── villager/
 │       │   ├── profession/
 │       │   └── type/
-│       └── zombie_villager/profession
+│       └── zombie_villager/
 │           ├── profession/
 │           └── type/
 └── data/                          # Loot tables & tags
@@ -468,4 +468,5 @@ All prefixed with `minecraft:`
 ---
 
 Example pack: https://cdn.modrinth.com/data/1fOqTPRO/versions/uKm9jZWL/morevillagers_example_villagerpack.zip
+
 
