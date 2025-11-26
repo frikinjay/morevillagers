@@ -460,4 +460,7 @@ All prefixed with `minecraft:`
 - Set up biome mappings first
 - Register base trades before biome overrides
 
+
 ---
+
+Example pack: https://cdn.modrinth.com/data/1fOqTPRO/versions/uKm9jZWL/morevillagers_example_villagerpack.zip
