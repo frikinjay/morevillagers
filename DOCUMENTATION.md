@@ -210,7 +210,7 @@ Defines what villagers buy and sell at each experience level (1=Novice to 5=Mast
 
 **Path**: `villagers/biome_trades/[profession].json`
 
-Adds extra trades for villagers in specific biomes.
+Adds extra or replaces trades for villagers in specific biomes.
 
 ```json
 {
@@ -218,20 +218,38 @@ Adds extra trades for villagers in specific biomes.
   "biome_overrides": {
     "morevillagers:jungle_dweller": {
       "levels": {
-        "1": [
-          {
-            "buy_a": {
-              "item": "minecraft:cocoa_beans",
-              "count": 16
-            },
-            "sell": "minecraft:emerald"
-          }
-        ]
+        "5": {
+          "replace": false,
+          "trades": [
+            {
+              "buy_a": {
+                "item": "minecraft:pufferfish",
+                "count": 4
+              },
+              "sell": "minecraft:emerald",
+              "max_uses": 12,
+              "xp": 30
+            }
+          ]
+        }
       }
     },
     "minecraft:desert": {
       "levels": {
-        "1": [ /* desert-specific trades */ ]
+        "3": {
+          "replace": true,
+          "trades": [
+            {
+              "buy_a": {
+                "item": "minecraft:emerald",
+                "count": 4
+              },
+              "sell": "minecraft:gold",
+              "max_uses": 12,
+              "xp": 30
+            }
+          ]
+        }
       }
     }
   }
@@ -468,5 +486,6 @@ All prefixed with `minecraft:`
 ---
 
 Example pack: https://cdn.modrinth.com/data/1fOqTPRO/versions/uKm9jZWL/morevillagers_example_villagerpack.zip
+
 
 
