@@ -70,7 +70,7 @@ Defines which block serves as the workstation. The filename becomes the POI iden
 ```json
 {
   "block": "minecraft:crying_obsidian",
-  "tickets": 1
+  "namespace": "morevillagers"
 }
 ```
 
@@ -91,7 +91,8 @@ Controls villager appearance by biome. Must include matching textures in `assets
 
 ```json
 {
-  "name": "jungle_dweller"
+  "name": "jungle_dweller",
+  "namespace": "morevillagers"
 }
 ```
 
@@ -110,7 +111,8 @@ Links a profession to its workstation and work sound.
 ```json
 {
   "poi_type": "alchemist",
-  "work_sound": "minecraft:entity.villager.work_cleric"
+  "work_sound": "minecraft:entity.villager.work_cleric",
+  "namespace": "morevillagers"
 }
 ```
 
@@ -206,7 +208,7 @@ Defines what villagers buy and sell at each experience level (1=Novice to 5=Mast
 
 ---
 
-### Biome-Specific Trades [Currently does not work] WIP
+### Biome-Specific Trades
 
 **Path**: `villagers/biome_trades/[profession].json`
 
@@ -485,7 +487,6 @@ All prefixed with `minecraft:`
 
 ---
 
-Example pack: https://cdn.modrinth.com/data/1fOqTPRO/versions/uKm9jZWL/morevillagers_example_villagerpack.zip
 
 
 
