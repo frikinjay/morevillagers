@@ -346,32 +346,9 @@ Minecraft now uses components instead of NBT. Here are the most common:
 }
 ```
 
-**Custom name and lore**:
-```json
-"minecraft:custom_name": "{\"text\":\"Epic Sword\",\"color\":\"gold\",\"italic\":false}",
-"minecraft:lore": [
-  "{\"text\":\"Line 1\",\"color\":\"gray\"}",
-  "{\"text\":\"Line 2\",\"color\":\"dark_gray\"}"
-]
-```
-
-**Potions**:
-```json
-"minecraft:potion_contents": {
-  "potion": "minecraft:strong_healing"
-}
-```
-
 **Damage**:
 ```json
 "minecraft:damage": 50
-```
-
-**Dyed color**:
-```json
-"minecraft:dyed_color": {
-  "rgb": 16711680
-}
 ```
 
 Visit https://minecraft.wiki/w/Item_components for more info on Item components.
@@ -486,6 +463,7 @@ All prefixed with `minecraft:`
 
 
 ---
+
 
 
 
