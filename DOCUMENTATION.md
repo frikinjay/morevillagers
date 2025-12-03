@@ -77,7 +77,7 @@ Defines which block serves as the workstation. The filename becomes the POI iden
 | Field | Type | Required | Default | Description |
 |-------|------|----------|---------|-------------|
 | block | string | Yes | - | Block resource location |
-| tickets | integer | No | 1 | Max villagers per workstation |
+| namespace | string | No | villagerapi | Namespace to register POI under |
 
 **Example**: File `alchemist.json` creates POI type `alchemist`
 
@@ -486,6 +486,7 @@ All prefixed with `minecraft:`
 
 
 ---
+
 
 
 
