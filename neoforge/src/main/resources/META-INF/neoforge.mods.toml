@@ -1,5 +1,5 @@
 modLoader = "javafml"
-loaderVersion = "[2,)"
+loaderVersion = "[4,)"
 issueTrackerURL = "https://github.com/frikinjay/morevillagers/issues"
 license = "MIT"
 
@@ -16,17 +16,23 @@ logoFile = "icon.png"
 [[dependencies.morevillagers]]
 modId = "neoforge"
 type = "required"
-versionRange = "[21,)"
-ordering = "NONE"
+versionRange = "[21.1,)"
+ordering = "AFTER"
 side = "BOTH"
 
 [[dependencies.morevillagers]]
 modId = "minecraft"
 type = "required"
 versionRange = "[1.21.1,1.21.2]"
-ordering = "NONE"
+ordering = "AFTER"
 side = "BOTH"
 
+[[dependencies.morevillagers]]
+modId = "villagerapi"
+type = "required"
+versionRange = "[1.1.0,)"
+ordering = "NONE"
+side = "BOTH"
 
 [[mixins]]
 config = "morevillagers.mixins.json"

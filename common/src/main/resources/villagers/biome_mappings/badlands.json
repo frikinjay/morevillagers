@@ -1,0 +1,7 @@
+{
+  "biomes": {
+    "minecraft:badlands": "morevillagers:badlands",
+    "minecraft:wooded_badlands": "morevillagers:badlands",
+    "minecraft:eroded_badlands": "morevillagers:badlands"
+  }
+}

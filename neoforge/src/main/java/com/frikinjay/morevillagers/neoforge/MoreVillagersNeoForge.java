@@ -1,8 +1,6 @@
 package com.frikinjay.morevillagers.neoforge;
 
 import com.frikinjay.morevillagers.MoreVillagers;
-import com.frikinjay.morevillagers.registry.MVGifts;
-import com.frikinjay.morevillagers.registry.MVProfessions;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -19,6 +17,7 @@ import com.frikinjay.morevillagers.registry.neoforge.MVConfigNeoForge;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.server.ServerAboutToStartEvent;
+import net.neoforged.neoforge.event.server.ServerStartedEvent;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.RegisterEvent;
 
@@ -33,12 +32,12 @@ public final class MoreVillagersNeoForge {
         container.registerConfig(ModConfig.Type.COMMON, MVConfigNeoForge.COMMON_CONFIG);
 
         CommonPlatformHelperImpl.BLOCKS.register(modEventBus);
+
         CommonPlatformHelperImpl.ITEMS.register(modEventBus);
-        CommonPlatformHelperImpl.POI_TYPES.register(modEventBus);
-        CommonPlatformHelperImpl.PROFESSIONS.register(modEventBus);
 
         modEventBus.addListener(this::addCreativeModeTab);
         modEventBus.addListener(this::setup);
+        //modEventBus.addListener(this::onClientSetup);
 
         NeoForge.EVENT_BUS.register(this);
     }
@@ -46,6 +45,11 @@ public final class MoreVillagersNeoForge {
     @SubscribeEvent
     public void onServerAboutToStartEvent(ServerAboutToStartEvent event) {
         MoreVillagers.registerJigsaws(event.getServer());
+    }
+
+    @SubscribeEvent
+    public void postServerStart(ServerStartedEvent event) {
+
     }
 
     private void addCreativeModeTab(RegisterEvent event) {
@@ -67,8 +71,7 @@ public final class MoreVillagersNeoForge {
 
     private void setup(final FMLCommonSetupEvent event) {
         event.enqueueWork(() -> {
-            MVProfessions.fillTradeData();
-            MVGifts.registerGiftMappings();
         });
     }
+
 }

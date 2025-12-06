@@ -1,0 +1,167 @@
+{
+  "profession": "morevillagers:woodworker",
+  "levels": {
+    "1": [
+      {
+        "buy_a": {
+          "item": "minecraft:oak_sapling",
+          "count": 6
+        },
+        "sell": "minecraft:emerald",
+        "max_uses": 16,
+        "xp": 2
+      },
+      {
+        "buy_a": "minecraft:emerald",
+        "sell": {
+          "item": "minecraft:oak_log",
+          "count": 6
+        },
+        "max_uses": 16,
+        "xp": 1
+      },
+      {
+        "buy_a": {
+          "item": "minecraft:birch_sapling",
+          "count": 6
+        },
+        "sell": "minecraft:emerald",
+        "max_uses": 16,
+        "xp": 2
+      },
+      {
+        "buy_a": "minecraft:emerald",
+        "sell": {
+          "item": "minecraft:birch_log",
+          "count": 6
+        },
+        "max_uses": 16,
+        "xp": 1
+      }
+    ],
+    "2": [
+      {
+        "buy_a": {
+          "item": "minecraft:spruce_sapling",
+          "count": 6
+        },
+        "sell": "minecraft:emerald",
+        "max_uses": 16,
+        "xp": 10
+      },
+      {
+        "buy_a": "minecraft:emerald",
+        "sell": {
+          "item": "minecraft:spruce_log",
+          "count": 6
+        },
+        "max_uses": 16,
+        "xp": 5
+      },
+      {
+        "buy_a": {
+          "item": "minecraft:dark_oak_sapling",
+          "count": 6
+        },
+        "sell": "minecraft:emerald",
+        "max_uses": 16,
+        "xp": 10
+      },
+      {
+        "buy_a": "minecraft:emerald",
+        "sell": {
+          "item": "minecraft:dark_oak_log",
+          "count": 6
+        },
+        "max_uses": 16,
+        "xp": 5
+      }
+    ],
+    "3": [
+      {
+        "buy_a": {
+          "item": "minecraft:acacia_sapling",
+          "count": 6
+        },
+        "sell": "minecraft:emerald",
+        "max_uses": 16,
+        "xp": 20
+      },
+      {
+        "buy_a": "minecraft:emerald",
+        "sell": {
+          "item": "minecraft:acacia_log",
+          "count": 6
+        },
+        "max_uses": 16,
+        "xp": 10
+      },
+      {
+        "buy_a": {
+          "item": "minecraft:jungle_sapling",
+          "count": 6
+        },
+        "sell": "minecraft:emerald",
+        "max_uses": 16,
+        "xp": 20
+      },
+      {
+        "buy_a": "minecraft:emerald",
+        "sell": {
+          "item": "minecraft:jungle_log",
+          "count": 6
+        },
+        "max_uses": 16,
+        "xp": 10
+      }
+    ],
+    "4": [
+      {
+        "buy_a": "minecraft:emerald",
+        "sell": {
+          "item": "minecraft:warped_stem",
+          "count": 6
+        },
+        "max_uses": 16,
+        "xp": 15
+      },
+      {
+        "buy_a": "minecraft:emerald",
+        "sell": {
+          "item": "minecraft:crimson_stem",
+          "count": 6
+        },
+        "max_uses": 16,
+        "xp": 15
+      }
+    ],
+    "5": [
+      {
+        "buy_a": {
+          "item": "minecraft:emerald",
+          "count": 12
+        },
+        "sell": {
+          "item": "minecraft:diamond_axe",
+          "count": 1
+        },
+        "max_uses": 15,
+        "xp": 30,
+        "price_multiplier": 0.2
+      },
+      {
+        "buy_a": {
+          "item": "minecraft:emerald",
+          "count": 12
+        },
+        "sell": {
+          "item": "minecraft:diamond_hoe",
+          "count": 1
+        },
+        "max_uses": 15,
+        "xp": 30,
+        "price_multiplier": 0.2
+      }
+    ]
+  }
+}

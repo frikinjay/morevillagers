@@ -15,6 +15,10 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:raw_gold"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond"
         }
       ],
       "rolls": 1.0

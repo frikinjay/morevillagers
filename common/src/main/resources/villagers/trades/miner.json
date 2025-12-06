@@ -1,0 +1,119 @@
+{
+  "profession": "morevillagers:miner",
+  "levels": {
+    "1": [
+      {
+        "buy_a": {
+          "item": "minecraft:deepslate",
+          "count": 20
+        },
+        "sell": "minecraft:emerald",
+        "max_uses": 16,
+        "xp": 2
+      },
+      {
+        "buy_a": "minecraft:emerald",
+        "sell": {
+          "item": "minecraft:calcite",
+          "count": 16
+        },
+        "max_uses": 16,
+        "xp": 1
+      }
+    ],
+    "2": [
+      {
+        "buy_a": {
+          "item": "minecraft:raw_copper",
+          "count": 15
+        },
+        "sell": "minecraft:emerald",
+        "max_uses": 16,
+        "xp": 10
+      },
+      {
+        "buy_a": {
+          "item": "minecraft:raw_iron",
+          "count": 12
+        },
+        "sell": "minecraft:emerald",
+        "max_uses": 16,
+        "xp": 10
+      }
+    ],
+    "3": [
+      {
+        "buy_a": {
+          "item": "minecraft:raw_gold",
+          "count": 10
+        },
+        "sell": "minecraft:emerald",
+        "max_uses": 16,
+        "xp": 20
+      },
+      {
+        "buy_a": "minecraft:emerald",
+        "sell": {
+          "item": "minecraft:amethyst_shard",
+          "count": 2
+        },
+        "max_uses": 12,
+        "xp": 10
+      }
+    ],
+    "4": [
+      {
+        "buy_a": {
+          "item": "minecraft:torch",
+          "count": 50
+        },
+        "sell": "minecraft:emerald",
+        "max_uses": 12,
+        "xp": 30
+      },
+      {
+        "buy_a": {
+          "item": "minecraft:emerald",
+          "count": 13
+        },
+        "sell": {
+          "item_type": "treasure_map",
+          "structure_tag": "morevillagers:on_mineshaft_explorer_maps",
+          "display_name": "filled_map.mineshaft",
+          "map_decoration": "morevillagers:mineshaft_decoration"
+        },
+        "max_uses": 12,
+        "xp": 15
+      }
+    ],
+    "5": [
+      {
+        "buy_a": {
+          "item": "minecraft:emerald",
+          "count": 12
+        },
+        "sell": {
+          "item": "minecraft:diamond_pickaxe",
+          "count": 1
+        },
+        "max_uses": 15,
+        "xp": 30,
+        "price_multiplier": 0.2
+      },
+      {
+        "buy_a": {
+          "item": "minecraft:emerald",
+          "count": 15
+        },
+        "sell": {
+          "item_type": "treasure_map",
+          "structure_tag": "morevillagers:on_ancient_city_explorer_maps",
+          "display_name": "filled_map.ancient_city",
+          "map_decoration": "minecraft:marker_blue"
+        },
+        "max_uses": 12,
+        "xp": 15
+      }
+    ]
+  }
+}

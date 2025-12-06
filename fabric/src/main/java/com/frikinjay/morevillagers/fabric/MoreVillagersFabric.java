@@ -1,8 +1,7 @@
 package com.frikinjay.morevillagers.fabric;
 
 import com.frikinjay.morevillagers.MoreVillagers;
-import com.frikinjay.morevillagers.registry.MVGifts;
-import com.frikinjay.morevillagers.registry.MVProfessions;
+import com.frikinjay.morevillagers.registry.*;
 import com.frikinjay.morevillagers.registry.fabric.MVConfigFabric;
 import me.shedaniel.autoconfig.AutoConfig;
 import me.shedaniel.autoconfig.serializer.GsonConfigSerializer;
@@ -26,9 +25,12 @@ public final class MoreVillagersFabric implements ModInitializer {
     public void onInitialize() {
         AutoConfig.register(MVConfigFabric.class, GsonConfigSerializer::new);
         MoreVillagers.init();
-        MVProfessions.fillTradeData();
-        MVGifts.registerGiftMappings();
-        ServerLifecycleEvents.SERVER_STARTING.register(MoreVillagers::registerJigsaws);
+
+        ServerLifecycleEvents.SERVER_STARTING.register(server -> {
+            MoreVillagers.registerJigsaws(server);
+        });
+        ServerLifecycleEvents.SERVER_STARTED.register(server -> {
+        });
         Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, MoreVillagers.TAB, FabricItemGroup.builder()
                 .icon(() -> new ItemStack(Items.EMERALD))
                 .title(Component.translatable("itemGroup." + MoreVillagers.MOD_ID + ".tab"))

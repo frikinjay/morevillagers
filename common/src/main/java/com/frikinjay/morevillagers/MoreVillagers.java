@@ -1,10 +1,7 @@
 package com.frikinjay.morevillagers;
 
 import com.frikinjay.morevillagers.platform.ConfigHelper;
-import com.frikinjay.morevillagers.registry.MVBlocks;
-import com.frikinjay.morevillagers.registry.MVGifts;
-import com.frikinjay.morevillagers.registry.MVPoiTypes;
-import com.frikinjay.morevillagers.registry.MVProfessions;
+import com.frikinjay.morevillagers.registry.*;
 import com.frikinjay.morevillagers.util.JigsawHelper;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.Registries;
@@ -14,18 +11,17 @@ import net.minecraft.server.MinecraftServer;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.level.levelgen.structure.pools.StructureTemplatePool;
 import net.minecraft.world.level.levelgen.structure.templatesystem.StructureProcessorList;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class MoreVillagers
 {
     public static final String MOD_ID = "morevillagers";
-    //public static final String AETHER_ID = "aether";
+    public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
     public static final ResourceKey<CreativeModeTab> TAB = ResourceKey.create(Registries.CREATIVE_MODE_TAB, new ResourceLocation(MOD_ID, "tab"));
 
     public static void init() {
         MVBlocks.init();
-        MVPoiTypes.init();
-        MVProfessions.init();
-        MVGifts.init();
     }
 
     public static void registerJigsaws(MinecraftServer server) {

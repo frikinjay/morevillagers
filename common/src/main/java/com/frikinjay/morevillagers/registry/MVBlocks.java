@@ -1,5 +1,6 @@
 package com.frikinjay.morevillagers.registry;
 
+import com.frikinjay.morevillagers.MoreVillagers;
 import com.frikinjay.morevillagers.platform.CommonPlatformHelper;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -10,7 +11,20 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import java.util.function.Supplier;
 
 public class MVBlocks {
-    public static void init() {}
+    public static void init() {
+        MoreVillagers.LOGGER.info("More Villagers blocks registered: {},{},{},{},{},{},{},{},{},{}",
+                OCEANOGRAPHY_TABLE.toString(),
+                WOODWORKING_TABLE.toString(),
+                DECAYED_WORKBENCH.toString(),
+                PURPUR_ALTAR.toString(),
+                BLUEPRINT_TABLE.toString(),
+                GARDENING_TABLE.toString(),
+                HUNTING_POST.toString(),
+                MINING_BENCH.toString(),
+                GILDED_STATION.toString(),
+                CHILLER.toString()
+        );
+    }
 
     public static final Supplier<Block> OCEANOGRAPHY_TABLE = registerBlock("oceanography_table", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CARTOGRAPHY_TABLE)));
     public static final Supplier<Block> WOODWORKING_TABLE = registerBlock("woodworking_table", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CARTOGRAPHY_TABLE)));
@@ -26,6 +40,7 @@ public class MVBlocks {
     public static <T extends Block> Supplier<T> registerBlock(String name, Supplier<T> block) {
         Supplier<T> toReturn = CommonPlatformHelper.registerBlock(name, block);
         CommonPlatformHelper.registerItem(name, () -> new BlockItem(toReturn.get(), new Item.Properties()));
+        MoreVillagers.LOGGER.debug("Registered block and item {}", name);
         return toReturn;
     }
 }

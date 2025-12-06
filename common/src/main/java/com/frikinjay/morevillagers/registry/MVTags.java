@@ -7,6 +7,7 @@ import net.minecraft.tags.TagKey;
 import net.minecraft.world.level.levelgen.structure.Structure;
 
 public class MVTags {
+/*
     public static final TagKey<Structure> ON_FORTRESS_EXPLORER_MAPS = createConfiguredStructureFeatureTag("on_fortress_explorer_maps");
     public static final TagKey<Structure> ON_BASTION_REMNANT_EXPLORER_MAPS = createConfiguredStructureFeatureTag("on_bastion_remnant_explorer_maps");
     public static final TagKey<Structure> ON_END_CITY_EXPLORER_MAPS = createConfiguredStructureFeatureTag("on_end_city_explorer_maps");
@@ -17,6 +18,8 @@ public class MVTags {
     public static final TagKey<Structure> ON_ANCIENT_CITY_EXPLORER_MAPS = createConfiguredStructureFeatureTag("on_ancient_city_explorer_maps");
 
     private static TagKey<Structure> createConfiguredStructureFeatureTag(String name) {
+        MoreVillagers.LOGGER.debug("Create tag {}", name);
         return TagKey.create(Registries.STRUCTURE, new ResourceLocation(MoreVillagers.MOD_ID, name));
     }
+*/
 }

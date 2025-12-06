@@ -1,0 +1,115 @@
+{
+  "profession": "morevillagers:iceman",
+  "levels": {
+    "1": [
+      {
+        "buy_a": {
+          "item": "minecraft:spruce_log",
+          "count": 20
+        },
+        "sell": "minecraft:emerald",
+        "max_uses": 16,
+        "xp": 2
+      },
+      {
+        "buy_a": "minecraft:emerald",
+        "sell": {
+          "item": "minecraft:ice",
+          "count": 8
+        },
+        "max_uses": 8,
+        "xp": 1
+      }
+    ],
+    "2": [
+      {
+        "buy_a": {
+          "item": "minecraft:fern",
+          "count": 3
+        },
+        "sell": "minecraft:emerald",
+        "max_uses": 4,
+        "xp": 4
+      },
+      {
+        "buy_a": "minecraft:powder_snow_bucket",
+        "sell": "minecraft:emerald",
+        "max_uses": 2,
+        "xp": 10
+      }
+    ],
+    "3": [
+      {
+        "buy_a": {
+          "item": "minecraft:snow_block",
+          "count": 6
+        },
+        "sell": "minecraft:emerald",
+        "max_uses": 8,
+        "xp": 10
+      },
+      {
+        "buy_a": {
+          "item": "minecraft:emerald",
+          "count": 4
+        },
+        "sell": {
+          "item": "minecraft:packed_ice",
+          "count": 4
+        },
+        "max_uses": 10,
+        "xp": 10
+      }
+    ],
+    "4": [
+      {
+        "buy_a": {
+          "item": "minecraft:red_wool",
+          "count": 8
+        },
+        "sell": "minecraft:emerald",
+        "max_uses": 4,
+        "xp": 20
+      },
+      {
+        "buy_a": {
+          "item": "minecraft:emerald",
+          "count": 24
+        },
+        "sell": {
+          "item": "minecraft:rabbit_hide",
+          "count": 2
+        },
+        "max_uses": 10,
+        "xp": 15
+      }
+    ],
+    "5": [
+      {
+        "buy_a": {
+          "item": "minecraft:emerald",
+          "count": 12
+        },
+        "sell": {
+          "item": "minecraft:diamond_shovel",
+          "count": 1
+        },
+        "max_uses": 15,
+        "xp": 30,
+        "price_multiplier": 0.2
+      },
+      {
+        "buy_a": {
+          "item": "minecraft:emerald",
+          "count": 8
+        },
+        "sell": {
+          "item": "minecraft:blue_ice",
+          "count": 4
+        },
+        "max_uses": 20,
+        "xp": 30
+      }
+    ]
+  }
+}

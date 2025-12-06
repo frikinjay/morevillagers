@@ -1,0 +1,132 @@
+{
+  "profession": "morevillagers:engineer",
+  "levels": {
+    "1": [
+      {
+        "buy_a": {
+          "item": "minecraft:redstone",
+          "count": 20
+        },
+        "sell": "minecraft:emerald",
+        "max_uses": 16,
+        "xp": 2
+      },
+      {
+        "buy_a": {
+          "item": "minecraft:emerald",
+          "count": 4
+        },
+        "sell": {
+          "item": "minecraft:repeater",
+          "count": 3
+        },
+        "max_uses": 16,
+        "xp": 1
+      }
+    ],
+    "2": [
+      {
+        "buy_a": {
+          "item": "minecraft:redstone_torch",
+          "count": 12
+        },
+        "sell": "minecraft:emerald",
+        "max_uses": 16,
+        "xp": 10
+      },
+      {
+        "buy_a": {
+          "item": "minecraft:emerald",
+          "count": 3
+        },
+        "sell": {
+          "item": "minecraft:dropper",
+          "count": 3
+        },
+        "max_uses": 16,
+        "xp": 5
+      },
+      {
+        "buy_a": {
+          "item": "minecraft:emerald",
+          "count": 4
+        },
+        "sell": "minecraft:dispenser",
+        "max_uses": 16,
+        "xp": 5
+      }
+    ],
+    "3": [
+      {
+        "buy_a": {
+          "item": "minecraft:redstone_lamp",
+          "count": 4
+        },
+        "sell": "minecraft:emerald",
+        "max_uses": 16,
+        "xp": 20
+      },
+      {
+        "buy_a": {
+          "item": "minecraft:emerald",
+          "count": 4
+        },
+        "sell": "minecraft:observer",
+        "max_uses": 16,
+        "xp": 10
+      },
+      {
+        "buy_a": {
+          "item": "minecraft:emerald",
+          "count": 5
+        },
+        "sell": "minecraft:comparator",
+        "max_uses": 16,
+        "xp": 10
+      }
+    ],
+    "4": [
+      {
+        "buy_a": {
+          "item": "minecraft:emerald",
+          "count": 5
+        },
+        "sell": "minecraft:piston",
+        "max_uses": 16,
+        "xp": 15
+      },
+      {
+        "buy_a": {
+          "item": "minecraft:emerald",
+          "count": 6
+        },
+        "sell": "minecraft:sticky_piston",
+        "max_uses": 16,
+        "xp": 15
+      }
+    ],
+    "5": [
+      {
+        "buy_a": {
+          "item": "minecraft:emerald",
+          "count": 5
+        },
+        "sell": {
+          "item": "minecraft:daylight_detector",
+          "count": 2
+        },
+        "max_uses": 16,
+        "xp": 30
+      },
+      {
+        "buy_a": {
+          "item": "minecraft:emerald",
+          "count": 7
+        },
+        "sell": "minecraft:hopper",
+        "max_uses": 16,
+        "xp": 30
+      }
+    ]
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "profession": "morevillagers:hunter",
+  "levels": {
+    "1": [
+      {
+        "buy_a": {
+          "item": "minecraft:bone",
+          "count": 32
+        },
+        "sell": "minecraft:emerald",
+        "max_uses": 16,
+        "xp": 2
+      },
+      {
+        "buy_a": {
+          "item": "minecraft:emerald",
+          "count": 5
+        },
+        "sell": {
+          "item": "minecraft:slime_ball",
+          "count": 2
+        },
+        "max_uses": 16,
+        "xp": 1
+      }
+    ],
+    "2": [
+      {
+        "buy_a": {
+          "item": "minecraft:spider_eye",
+          "count": 24
+        },
+        "sell": "minecraft:emerald",
+        "max_uses": 16,
+        "xp": 10
+      },
+      {
+        "buy_a": {
+          "item": "minecraft:emerald",
+          "count": 5
+        },
+        "sell": "minecraft:fermented_spider_eye",
+        "max_uses": 16,
+        "xp": 5
+      }
+    ],
+    "3": [
+      {
+        "buy_a": {
+          "item": "minecraft:gunpowder",
+          "count": 20
+        },
+        "sell": "minecraft:emerald",
+        "max_uses": 16,
+        "xp": 20
+      },
+      {
+        "buy_a": {
+          "item": "minecraft:emerald",
+          "count": 5
+        },
+        "sell": "minecraft:magma_cream",
+        "max_uses": 12,
+        "xp": 10
+      }
+    ],
+    "4": [
+      {
+        "buy_a": {
+          "item": "minecraft:emerald",
+          "count": 5
+        },
+        "sell": "minecraft:blaze_rod",
+        "max_uses": 12,
+        "xp": 15
+      },
+      {
+        "buy_a": {
+          "item": "minecraft:emerald",
+          "count": 13
+        },
+        "sell": {
+          "item_type": "treasure_map",
+          "structure_tag": "morevillagers:on_pillager_outpost_explorer_maps",
+          "display_name": "filled_map.pillager_outpost",
+          "map_decoration": "morevillagers:pillager_outpost_decoration"
+        },
+        "max_uses": 12,
+        "xp": 15
+      }
+    ],
+    "5": [
+      {
+        "buy_a": {
+          "item": "minecraft:emerald",
+          "count": 8
+        },
+        "sell": "minecraft:ghast_tear",
+        "max_uses": 12,
+        "xp": 30
+      },
+      {
+        "buy_a": {
+          "item": "minecraft:emerald",
+          "count": 8
+        },
+        "sell": "minecraft:rabbit_foot",
+        "max_uses": 12,
+        "xp": 30
+      }
+    ]
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "profession": "morevillagers:florist",
+  "levels": {
+    "1": [
+      {
+        "buy_a": {
+          "item": "minecraft:flower_pot",
+          "count": 3
+        },
+        "sell": "minecraft:emerald",
+        "max_uses": 16,
+        "xp": 2
+      },
+      {
+        "buy_a": {
+          "item": "minecraft:emerald",
+          "count": 3
+        },
+        "sell": "minecraft:honeycomb",
+        "max_uses": 16,
+        "xp": 1
+      }
+    ],
+    "2": [
+      {
+        "buy_a": {
+          "item": "minecraft:vine",
+          "count": 24
+        },
+        "sell": "minecraft:emerald",
+        "max_uses": 16,
+        "xp": 10
+      },
+      {
+        "buy_a": "minecraft:emerald",
+        "sell": {
+          "item": "minecraft:glow_berries",
+          "count": 2
+        },
+        "max_uses": 16,
+        "xp": 5
+      }
+    ],
+    "3": [
+      {
+        "buy_a": "minecraft:emerald",
+        "sell": {
+          "item": "minecraft:small_dripleaf",
+          "count": 2
+        },
+        "max_uses": 16,
+        "xp": 10
+      },
+      {
+        "buy_a": {
+          "item": "minecraft:emerald",
+          "count": 6
+        },
+        "sell": "minecraft:honey_bottle",
+        "max_uses": 16,
+        "xp": 10
+      }
+    ],
+    "4": [
+      {
+        "buy_a": {
+          "item": "minecraft:moss_block",
+          "count": 32
+        },
+        "sell": "minecraft:emerald",
+        "max_uses": 16,
+        "xp": 30
+      },
+      {
+        "buy_a": {
+          "item": "minecraft:emerald",
+          "count": 13
+        },
+        "sell": {
+          "item_type": "treasure_map",
+          "structure_tag": "morevillagers:on_swamp_hut_explorer_maps",
+          "display_name": "filled_map.swamp_hut",
+          "map_decoration": "minecraft:swamp_hut"
+        },
+        "max_uses": 12,
+        "xp": 15
+      }
+    ],
+    "5": [
+      {
+        "buy_a": {
+          "item": "minecraft:emerald",
+          "count": 6
+        },
+        "sell": "minecraft:bee_nest",
+        "max_uses": 12,
+        "xp": 30
+      },
+      {
+        "buy_a": {
+          "item": "minecraft:emerald",
+          "count": 15
+        },
+        "sell": {
+          "item_type": "treasure_map",
+          "structure_tag": "morevillagers:on_jungle_temple_explorer_maps",
+          "display_name": "filled_map.jungle_pyramid",
+          "map_decoration": "minecraft:jungle_temple"
+        },
+        "max_uses": 12,
+        "xp": 30
+      }
+    ]
+  }
+}

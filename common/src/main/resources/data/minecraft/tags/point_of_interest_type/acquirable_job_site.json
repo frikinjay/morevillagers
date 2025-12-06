@@ -1,4 +1,5 @@
 {
+  "replace": false,
   "values": [
     "morevillagers:oceanographer",
     "morevillagers:netherian",
@@ -8,6 +9,7 @@
     "morevillagers:florist",
     "morevillagers:hunter",
     "morevillagers:miner",
-    "morevillagers:iceman"
+    "morevillagers:iceman",
+    "morevillagers:explorer"
   ]
 }

@@ -1,0 +1,141 @@
+{
+  "profession": "morevillagers:explorer",
+  "levels": {
+    "1": [
+      {
+        "buy_a": {
+          "item": "minecraft:map",
+          "count": 8
+        },
+        "sell": {
+          "item": "minecraft:emerald",
+          "count": 12
+        },
+        "max_uses": 16,
+        "xp": 2
+      },
+      {
+        "buy_a": {
+          "item": "minecraft:emerald",
+          "count": 24
+        },
+        "buy_b": {
+          "item": "minecraft:map",
+          "count": 1
+        },
+        "sell": {
+          "item_type": "treasure_map",
+          "structure_tag": "morevillagers:on_ancient_city_explorer_maps",
+          "display_name": "filled_map.ancient_city",
+          "map_decoration": "morevillagers:ancient_city_decoration"
+        },
+        "max_uses": 1,
+        "xp": 5
+      }
+    ],
+    "2": [
+      {
+        "buy_a": {
+          "item": "minecraft:paper",
+          "count": 16
+        },
+        "sell": {
+          "item": "minecraft:emerald",
+          "count": 16
+        },
+        "max_uses": 12,
+        "xp": 5
+      },
+      {
+        "buy_a": {
+          "item": "minecraft:emerald",
+          "count": 8
+        },
+        "buy_b": {
+          "item": "minecraft:compass",
+          "count": 1
+        },
+        "sell": {
+          "item": "minecraft:recovery_compass",
+          "count": 1
+        },
+        "max_uses": 1,
+        "xp": 10
+      }
+    ],
+    "3": [
+      {
+        "buy_a": {
+          "item": "minecraft:emerald",
+          "count": 18
+        },
+        "sell": {
+          "item": "minecraft:spyglass",
+          "count": 1
+        },
+        "max_uses": 2,
+        "xp": 15
+      },
+      {
+        "buy_a": {
+          "item": "minecraft:emerald",
+          "count": 28
+        },
+        "sell": {
+          "item": "minecraft:diamond_boots",
+          "count": 1,
+          "components": {
+            "minecraft:enchantments": {
+              "levels": {
+                "minecraft:feather_falling": 4,
+                "minecraft:depth_strider": 3
+              }
+            }
+          }
+        },
+        "max_uses": 2,
+        "xp": 20,
+        "price_multiplier": 0.2
+      }
+    ],
+    "4": [
+      {
+        "buy_a": {
+          "item": "minecraft:emerald",
+          "count": 38
+        },
+        "buy_b": {
+          "item": "minecraft:map",
+          "count": 1
+        },
+        "sell": {
+          "item_type": "treasure_map",
+          "structure_tag": "minecraft:on_trial_chambers_maps",
+          "display_name": "filled_map.trial_chambers",
+          "map_decoration": "minecraft:trial_chambers"
+        },
+        "max_uses": 1,
+        "xp": 20
+      }
+    ],
+    "5": [
+      {
+        "buy_a": {
+          "item": "minecraft:emerald",
+          "count": 48
+        },
+        "buy_b": {
+          "item": "minecraft:ender_pearl",
+          "count": 2
+        },
+        "sell": {
+          "item": "minecraft:shulker_box",
+          "count": 1
+        },
+        "max_uses": 8,
+        "xp": 30,
+        "price_multiplier": 0.5
+      }
+    ]
+  }
+}

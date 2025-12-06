@@ -1,0 +1,104 @@
+{
+  "profession": "morevillagers:oceanographer",
+  "levels": {
+    "1": [
+      {
+        "buy_a": {
+          "item": "minecraft:prismarine",
+          "count": 14
+        },
+        "sell": "minecraft:emerald",
+        "max_uses": 16,
+        "xp": 2
+      },
+      {
+        "buy_a": "minecraft:emerald",
+        "sell": {
+          "item": "minecraft:sea_lantern",
+          "count": 4
+        },
+        "max_uses": 16,
+        "xp": 1
+      }
+    ],
+    "2": [
+      {
+        "buy_a": {
+          "item": "minecraft:prismarine_bricks",
+          "count": 14
+        },
+        "sell": "minecraft:emerald",
+        "max_uses": 16,
+        "xp": 10
+      },
+      {
+        "buy_a": {
+          "item": "minecraft:emerald",
+          "count": 4
+        },
+        "sell": {
+          "item": "minecraft:sponge",
+          "count": 2
+        },
+        "max_uses": 16,
+        "xp": 5
+      }
+    ],
+    "3": [
+      {
+        "buy_a": {
+          "item": "minecraft:dark_prismarine",
+          "count": 12
+        },
+        "sell": "minecraft:emerald",
+        "max_uses": 16,
+        "xp": 20
+      },
+      {
+        "buy_a": {
+          "item": "minecraft:emerald",
+          "count": 13
+        },
+        "sell": {
+          "item_type": "treasure_map",
+          "structure_tag": "minecraft:on_treasure_maps",
+          "display_name": "filled_map.buried_treasure",
+          "map_decoration": "minecraft:red_marker"
+        },
+        "max_uses": 12,
+        "xp": 10
+      }
+    ],
+    "4": [
+      {
+        "buy_a": {
+          "item": "minecraft:emerald",
+          "count": 3
+        },
+        "sell": "minecraft:nautilus_shell",
+        "max_uses": 12,
+        "xp": 15
+      },
+      {
+        "buy_a": {
+          "item": "minecraft:emerald",
+          "count": 8
+        },
+        "sell": "minecraft:heart_of_the_sea",
+        "max_uses": 12,
+        "xp": 15
+      }
+    ],
+    "5": [
+      {
+        "buy_a": {
+          "item": "minecraft:emerald",
+          "count": 32
+        },
+        "sell": "minecraft:trident",
+        "max_uses": 2,
+        "xp": 30
+      }
+    ]
+  }
+}

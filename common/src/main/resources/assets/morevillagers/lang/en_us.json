@@ -31,6 +31,7 @@
   "entity.minecraft.villager.morevillagers.miner": "Miner",
   "entity.minecraft.villager.morevillagers.ascended": "Ascended",
   "entity.minecraft.villager.morevillagers.iceman": "Iceman",
+  "entity.minecraft.villager.morevillagers.explorer": "Explorer",
 
   "entity.minecraft.villager.oceanographer": "Oceanographer",
   "entity.minecraft.villager.netherian": "Netherologist",
@@ -42,6 +43,7 @@
   "entity.minecraft.villager.miner": "Miner",
   "entity.minecraft.villager.ascended": "Ascended",
   "entity.minecraft.villager.iceman": "Iceman",
+  "entity.minecraft.villager.explorer": "Explorer",
 
   "advancements.all_professions_traded.title": "Frequent Customer",
   "advancements.all_professions_traded.description": "Trade with every villager profession",

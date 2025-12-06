@@ -6,8 +6,6 @@
   "client": [
   ],
   "mixins": [
-    "GiveGiftToHeroAccessor",
-    "PoiTypesInvoker",
     "StructureTemplatePoolAccessor"
   ],
   "injectors": {
