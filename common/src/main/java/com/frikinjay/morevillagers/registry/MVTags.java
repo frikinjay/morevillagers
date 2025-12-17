@@ -2,7 +2,7 @@ package com.frikinjay.morevillagers.registry;
 
 import com.frikinjay.morevillagers.MoreVillagers;
 import net.minecraft.core.registries.Registries;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.level.levelgen.structure.Structure;
 

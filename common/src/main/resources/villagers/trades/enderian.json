@@ -101,7 +101,7 @@
           "item": "minecraft:emerald",
           "count": 12
         },
-        "sell": "minecraft:shulker_shell",
+        "sell": "minecraft:ender_pearl",
         "max_uses": 8,
         "xp": 30
       },

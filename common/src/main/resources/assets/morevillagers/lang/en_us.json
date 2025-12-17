@@ -10,6 +10,17 @@
   "block.morevillagers.gilded_station": "Gilded Station",
   "block.morevillagers.chiller": "Chiller",
 
+  "item.morevillagers.oceanography_table": "Oceanography Table",
+  "item.morevillagers.woodworking_table": "Forestry Bench",
+  "item.morevillagers.decayed_workbench": "Decayed Workbench",
+  "item.morevillagers.purpur_altar": "Purpur Altar",
+  "item.morevillagers.blueprint_table": "Blueprint Table",
+  "item.morevillagers.gardening_table": "Gardening Table",
+  "item.morevillagers.hunting_post": "Hunting Post",
+  "item.morevillagers.mining_bench": "Mining Bench",
+  "item.morevillagers.gilded_station": "Gilded Station",
+  "item.morevillagers.chiller": "Chiller",
+
   "filled_map.bastion_remnant": "Bastion Explorer Map",
   "filled_map.fortress": "Fortress Explorer Map",
   "filled_map.endcity": "End City Explorer Map",
@@ -19,6 +30,7 @@
   "filled_map.mineshaft": "Mineshaft Explorer Map",
   "filled_map.ancient_city": "Ancient City Explorer Map",
 
+  "itemGroup.morevillagers.villagerpack_tab": "More Villagers",
   "itemGroup.morevillagers.tab": "More Villagers",
 
   "entity.minecraft.villager.morevillagers.oceanographer": "Oceanographer",
@@ -32,18 +44,6 @@
   "entity.minecraft.villager.morevillagers.ascended": "Ascended",
   "entity.minecraft.villager.morevillagers.iceman": "Iceman",
   "entity.minecraft.villager.morevillagers.explorer": "Explorer",
-
-  "entity.minecraft.villager.oceanographer": "Oceanographer",
-  "entity.minecraft.villager.netherian": "Netherologist",
-  "entity.minecraft.villager.woodworker": "Forester",
-  "entity.minecraft.villager.enderian": "Enderologist",
-  "entity.minecraft.villager.engineer": "Engineer",
-  "entity.minecraft.villager.florist": "Florist",
-  "entity.minecraft.villager.hunter": "Hunter",
-  "entity.minecraft.villager.miner": "Miner",
-  "entity.minecraft.villager.ascended": "Ascended",
-  "entity.minecraft.villager.iceman": "Iceman",
-  "entity.minecraft.villager.explorer": "Explorer",
 
   "advancements.all_professions_traded.title": "Frequent Customer",
   "advancements.all_professions_traded.description": "Trade with every villager profession",

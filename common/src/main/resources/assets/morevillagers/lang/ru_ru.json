@@ -9,6 +9,16 @@
   "block.morevillagers.mining_bench": "Рабочая станция шахтёра",
   "block.morevillagers.chiller": "Чиллер",
 
+  "item.morevillagers.oceanography_table": "Стол океанографа",
+  "item.morevillagers.woodworking_table": "Стол лесника",
+  "item.morevillagers.decayed_workbench": "Брошеная станция",
+  "item.morevillagers.purpur_altar": "Пурпурный алтарь",
+  "item.morevillagers.blueprint_table": "Чертёжный стол",
+  "item.morevillagers.gardening_table": "Столик садовника",
+  "item.morevillagers.hunting_post": "Пост охотника",
+  "item.morevillagers.mining_bench": "Рабочая станция шахтёра",
+  "item.morevillagers.chiller": "Чиллер",
+
   "filled_map.bastion_remnant": "Карта исследователя бастиона",
   "filled_map.fortress": "Карта исследователя крепости Незера ",
   "filled_map.endcity": "Карта исследователя города Энда",
@@ -17,6 +27,7 @@
   "filled_map.pillager_outpost": "Карта исследователя аванпоста разбойников",
   "filled_map.mineshaft": "Карта исследователя заброшенных шахт",
 
+  "itemGroup.morevillagers.villagerpack_tab": "More Villagers",
   "itemGroup.morevillagers.tab": "More Villagers",
 
   "entity.minecraft.villager.morevillagers.oceanographer": "Океанограф",
@@ -27,15 +38,6 @@
   "entity.minecraft.villager.morevillagers.florist": "Садовник",
   "entity.minecraft.villager.morevillagers.hunter": "Охотник",
   "entity.minecraft.villager.morevillagers.miner": "Шахтёр",
-
-  "entity.minecraft.villager.oceanographer": "Океанограф",
-  "entity.minecraft.villager.netherian": "Незеролог",
-  "entity.minecraft.villager.woodworker": "Лесник",
-  "entity.minecraft.villager.enderian": "Эндолог",
-  "entity.minecraft.villager.engineer": "Инженер",
-  "entity.minecraft.villager.florist": "Садовник",
-  "entity.minecraft.villager.hunter": "Охотник",
-  "entity.minecraft.villager.miner": "Шахтёр",
 
   "advancements.all_professions_traded.title": "Постоянный клиент",
   "advancements.all_professions_traded.description": "Поторгуйтесь с крестьянином каждой профессии",

@@ -19,6 +19,7 @@
   "filled_map.mineshaft": "Mapa do Explorador de Mina",
   "filled_map.ancient_city": "Mapa do Explorador de Cidade Ancestral",
 
+  "itemGroup.morevillagers.villagerpack_tab": "More Villagers",
   "itemGroup.morevillagers.tab": "More Villagers",
 
   "entity.minecraft.villager.morevillagers.oceanographer": "Oceanógrafo",
@@ -31,17 +32,6 @@
   "entity.minecraft.villager.morevillagers.miner": "Mineiro",
   "entity.minecraft.villager.morevillagers.ascended": "Ascendido",
   "entity.minecraft.villager.morevillagers.iceman": "Homem de Gelo",
-
-  "entity.minecraft.villager.oceanographer": "Oceanógrafo",
-  "entity.minecraft.villager.netherian": "Netherólogo",
-  "entity.minecraft.villager.woodworker": "Silvicultor",
-  "entity.minecraft.villager.enderian": "Enderólogo",
-  "entity.minecraft.villager.engineer": "Engenheiro",
-  "entity.minecraft.villager.florist": "Florista",
-  "entity.minecraft.villager.hunter": "Caçador",
-  "entity.minecraft.villager.miner": "Mineiro",
-  "entity.minecraft.villager.ascended": "Ascendido",
-  "entity.minecraft.villager.iceman": "Homem de Gelo",
 
   "advancements.all_professions_traded.title": "Cliente Frequente",
   "advancements.all_professions_traded.description": "Comercialize com todas as profissões de aldeão",

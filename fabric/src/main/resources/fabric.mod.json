@@ -30,12 +30,12 @@
     "morevillagers.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.17.3",
-    "minecraft": "1.21.1",
+    "fabricloader": ">=0.18.2",
+    "minecraft": "1.21.11",
     "java": ">=21",
     "fabric-api": "*",
     "cloth-config": ">=15.0.140",
-    "villagerapi": ">=1.1.0"
+    "villagerapi": ">=1.25.12.1"
   },
   "suggests": {
     "modmenu": ">=11.0.3"

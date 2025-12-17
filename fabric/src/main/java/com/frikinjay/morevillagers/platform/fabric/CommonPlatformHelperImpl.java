@@ -4,6 +4,7 @@ import com.frikinjay.morevillagers.MoreVillagers;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.resources.Identifier;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 
@@ -16,13 +17,13 @@ public class CommonPlatformHelperImpl {
     public static List<Supplier<Block>> REGISTERED_BLOCKS = new ArrayList<>();
 
     public static <T extends Block> Supplier<T> registerBlock(String name, Supplier<T> block) {
-        var registry = Registry.register(BuiltInRegistries.BLOCK, MoreVillagers.getRL(MoreVillagers.MOD_ID, name), block.get());
+        var registry = Registry.register(BuiltInRegistries.BLOCK, Identifier.fromNamespaceAndPath(MoreVillagers.MOD_ID, name), block.get());
         REGISTERED_BLOCKS.add(() -> registry);
         return () -> registry;
     }
 
     public static <T extends Item> Supplier<T> registerItem(String name, Supplier<T> item) {
-        var registry = Registry.register(BuiltInRegistries.ITEM, MoreVillagers.getRL(MoreVillagers.MOD_ID, name), item.get());
+        var registry = Registry.register(BuiltInRegistries.ITEM, Identifier.fromNamespaceAndPath(MoreVillagers.MOD_ID, name), item.get());
         return () -> registry;
     }
 

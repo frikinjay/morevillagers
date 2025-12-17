@@ -5,17 +5,13 @@
     "##"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:stone"
-    },
-    "@": {
-      "item": "minecraft:iron_pickaxe"
-    },
-    "$": {
-      "item": "minecraft:raw_iron"
-    }
+    "#": "minecraft:stone",
+    "@": "minecraft:iron_pickaxe",
+    "$": "minecraft:raw_iron"
   },
   "result": {
-    "id": "morevillagers:mining_bench"
-  }
+    "id": "morevillagers:mining_bench",
+    "count": 1
+  },
+  "category": "misc"
 }

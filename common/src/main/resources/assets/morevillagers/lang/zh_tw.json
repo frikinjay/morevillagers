@@ -9,6 +9,16 @@
   "block.morevillagers.mining_bench": "礦研台",
   "block.morevillagers.chiller": "冷卻器",
 
+  "item.morevillagers.oceanography_table": "海研台",
+  "item.morevillagers.woodworking_table": "鋸木台",
+  "item.morevillagers.decayed_workbench": "腐朽壇",
+  "item.morevillagers.purpur_altar": "紫珀壇",
+  "item.morevillagers.blueprint_table": "藍圖台",
+  "item.morevillagers.gardening_table": "園藝台",
+  "item.morevillagers.hunting_post": "狩獵台",
+  "item.morevillagers.mining_bench": "礦研台",
+  "item.morevillagers.chiller": "冷卻器",
+
   "filled_map.bastion_remnant": "堡壘遺跡探險家地圖",
   "filled_map.fortress": "地獄堡壘探險家地圖",
   "filled_map.endcity": "終界城探險家地圖",
@@ -17,6 +27,7 @@
   "filled_map.pillager_outpost": "前哨站探險家地圖",
   "filled_map.mineshaft": "廢棄礦坑探險家地圖",
 
+  "itemGroup.morevillagers.villagerpack_tab": "More Villagers",
   "itemGroup.morevillagers.tab": "More Villagers",
 
   "entity.minecraft.villager.morevillagers.oceanographer": "海洋學家",
@@ -27,15 +38,6 @@
   "entity.minecraft.villager.morevillagers.florist": "園藝匠",
   "entity.minecraft.villager.morevillagers.hunter": "追獵人",
   "entity.minecraft.villager.morevillagers.miner": "礦工",
-
-  "entity.minecraft.villager.oceanographer": "海洋學家",
-  "entity.minecraft.villager.netherian": "地獄旅者",
-  "entity.minecraft.villager.woodworker": "木匠",
-  "entity.minecraft.villager.enderian": "終界旅者",
-  "entity.minecraft.villager.engineer": "工程學家",
-  "entity.minecraft.villager.florist": "園藝匠",
-  "entity.minecraft.villager.hunter": "追獵人",
-  "entity.minecraft.villager.miner": "礦工",
 
   "advancements.all_professions_traded.title": "常客",
   "advancements.all_professions_traded.description": "與每個職業交易",

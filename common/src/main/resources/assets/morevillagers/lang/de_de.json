@@ -9,6 +9,16 @@
   "block.morevillagers.mining_bench": "Bergbaubank",
   "block.morevillagers.chiller": "Kühler",
 
+  "item.morevillagers.oceanography_table": "Ozeanographie-Tisch",
+  "item.morevillagers.woodworking_table": "Forstbank",
+  "item.morevillagers.decayed_workbench": "Verfallene Werkbank",
+  "item.morevillagers.purpur_altar": "Purpur-Altar",
+  "item.morevillagers.blueprint_table": "Blaupausentisch",
+  "item.morevillagers.gardening_table": "Gärtnerbank",
+  "item.morevillagers.hunting_post": "Jagdposten",
+  "item.morevillagers.mining_bench": "Bergbaubank",
+  "item.morevillagers.chiller": "Kühler",
+
   "filled_map.bastion_remnant": "Bastion-Entdeckerkarte",
   "filled_map.fortress": "Festung-Entdeckerkarte",
   "filled_map.endcity": "Endsiedlung-Entdeckerkarte",
@@ -18,6 +28,7 @@
   "filled_map.mineshaft": "Minen-Entdeckerkarte",
   "filled_map.ancient_city": "Antike Stadt-Entdeckerkarte",
 
+  "itemGroup.morevillagers.villagerpack_tab": "More Villagers",
   "itemGroup.morevillagers.tab": "More Villagers",
 
   "entity.minecraft.villager.morevillagers.oceanographer": "Ozeanograph",
@@ -28,15 +39,6 @@
   "entity.minecraft.villager.morevillagers.florist": "Florist",
   "entity.minecraft.villager.morevillagers.hunter": "Jäger",
   "entity.minecraft.villager.morevillagers.miner": "Bergarbeiter",
-
-  "entity.minecraft.villager.oceanographer": "Ozeanograph",
-  "entity.minecraft.villager.netherian": "Netherologe",
-  "entity.minecraft.villager.woodworker": "Förster",
-  "entity.minecraft.villager.enderian": "Enderologe",
-  "entity.minecraft.villager.engineer": "Ingenieur",
-  "entity.minecraft.villager.florist": "Florist",
-  "entity.minecraft.villager.hunter": "Jäger",
-  "entity.minecraft.villager.miner": "Bergarbeiter",
 
   "advancements.all_professions_traded.title": "Stammkunde",
   "advancements.all_professions_traded.description": "Handeln Sie mit jedem Dorfbewohnerberuf",

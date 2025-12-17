@@ -23,14 +23,14 @@ side = "BOTH"
 [[dependencies.morevillagers]]
 modId = "minecraft"
 type = "required"
-versionRange = "[1.21.1,1.21.2]"
+versionRange = "[1.21.11]"
 ordering = "AFTER"
 side = "BOTH"
 
 [[dependencies.morevillagers]]
 modId = "villagerapi"
 type = "required"
-versionRange = "[1.1.0,)"
+versionRange = "[1.25.12.1,)"
 ordering = "NONE"
 side = "BOTH"
 

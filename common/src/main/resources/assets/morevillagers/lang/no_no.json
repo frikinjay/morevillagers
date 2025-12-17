@@ -9,6 +9,16 @@
   "block.morevillagers.mining_bench": "Gruvedriftsbenk",
   "block.morevillagers.chiller": "Verkoeler",
 
+  "item.morevillagers.oceanography_table": "Oseanografbenk",
+  "item.morevillagers.woodworking_table": "Skogsmesterbenk",
+  "item.morevillagers.decayed_workbench": "Forfalt Arbeidsbenk",
+  "item.morevillagers.purpur_altar": "Purpuralter",
+  "item.morevillagers.blueprint_table": "Ingeniørbord",
+  "item.morevillagers.gardening_table": "Hagearbeidsbenk",
+  "item.morevillagers.hunting_post": "Jaktpost",
+  "item.morevillagers.mining_bench": "Gruvedriftsbenk",
+  "item.morevillagers.chiller": "Verkoeler",
+
   "filled_map.bastion_remnant": "Bastion-Utforskerkart",
   "filled_map.fortress": "Festningsutforskerkart",
   "filled_map.endcity": "Endebyutforskerkart",
@@ -17,6 +27,7 @@
   "filled_map.pillager_outpost": "Utpostutforskerart",
   "filled_map.mineshaft": "Gruvesjaktutforskerkart",
 
+  "itemGroup.morevillagers.villagerpack_tab": "More Villagers",
   "itemGroup.morevillagers.tab": "More Villagers",
 
   "entity.minecraft.villager.morevillagers.oceanographer": "Oseanograf",
@@ -27,15 +38,6 @@
   "entity.minecraft.villager.morevillagers.florist": "Blomsterhandler",
   "entity.minecraft.villager.morevillagers.hunter": "Jeger",
   "entity.minecraft.villager.morevillagers.miner": "Gruvearbeider",
-
-  "entity.minecraft.villager.oceanographer": "Oseanograf",
-  "entity.minecraft.villager.netherian": "Netherologist",
-  "entity.minecraft.villager.woodworker": "Skogsmester",
-  "entity.minecraft.villager.enderian": "Enderologist",
-  "entity.minecraft.villager.engineer": "Ingeniør",
-  "entity.minecraft.villager.florist": "Blomsterhandler",
-  "entity.minecraft.villager.hunter": "Jeger",
-  "entity.minecraft.villager.miner": "Gruvearbeider",
 
   "advancements.all_professions_traded.title": "Stamkunde",
   "advancements.all_professions_traded.description": "Utfør handel med hver eneste proffesjon",
