@@ -10,6 +10,8 @@
   "block.morevillagers.gilded_station": "Gilded Station",
   "block.morevillagers.chiller": "Chiller",
 
+  "block.morevillagers.xmas_chest": "Christmas Chest",
+
   "item.morevillagers.oceanography_table": "Oceanography Table",
   "item.morevillagers.woodworking_table": "Forestry Bench",
   "item.morevillagers.decayed_workbench": "Decayed Workbench",
@@ -20,6 +22,8 @@
   "item.morevillagers.mining_bench": "Mining Bench",
   "item.morevillagers.gilded_station": "Gilded Station",
   "item.morevillagers.chiller": "Chiller",
+
+  "item.morevillagers.xmas_chest": "Christmas Chest",
 
   "filled_map.bastion_remnant": "Bastion Explorer Map",
   "filled_map.fortress": "Fortress Explorer Map",
@@ -53,6 +57,8 @@
   "advancements.all_workstations_get.description": "Obtain every villager workstation.",
   "advancements.buy_map.title": "Sponsored Voyage",
   "advancements.buy_map.description": "Buy an Explorer Map from a villager.",
+  "advancements.buy_xmas_chest.title": "It's Christmas every day!",
+  "advancements.buy_xmas_chest.description": "Buy a Christmas Chest from a villager.",
   "advancements.end_trade.title": "Emeralds to the Moon!",
   "advancements.end_trade.description": "Trade with the Enderologist in the End dimension.",
   "advancements.first_trade.title": "First Trade",

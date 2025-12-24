@@ -7,6 +7,7 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.Identifier;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.entity.BlockEntityType;
 
 import java.nio.file.Path;
 import java.util.ArrayList;
@@ -19,6 +20,11 @@ public class CommonPlatformHelperImpl {
     public static <T extends Block> Supplier<T> registerBlock(String name, Supplier<T> block) {
         var registry = Registry.register(BuiltInRegistries.BLOCK, Identifier.fromNamespaceAndPath(MoreVillagers.MOD_ID, name), block.get());
         REGISTERED_BLOCKS.add(() -> registry);
+        return () -> registry;
+    }
+
+    public static <T extends BlockEntityType<?>> Supplier<T> registerBlockEntity(String name, Supplier<T> blockEntity) {
+        var registry = Registry.register(BuiltInRegistries.BLOCK_ENTITY_TYPE, Identifier.fromNamespaceAndPath(MoreVillagers.MOD_ID, name), blockEntity.get());
         return () -> registry;
     }
 

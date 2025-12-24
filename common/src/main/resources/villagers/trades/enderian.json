@@ -108,7 +108,7 @@
       {
         "buy_a": {
           "item": "minecraft:emerald",
-          "count": 20
+          "count": 64
         },
         "sell": "minecraft:dragon_head",
         "max_uses": 2,

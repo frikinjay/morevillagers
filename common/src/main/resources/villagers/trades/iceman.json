@@ -5,7 +5,7 @@
       {
         "buy_a": {
           "item": "minecraft:spruce_log",
-          "count": 20
+          "count": 5
         },
         "sell": "minecraft:emerald",
         "max_uses": 16,
@@ -17,7 +17,7 @@
           "item": "minecraft:ice",
           "count": 8
         },
-        "max_uses": 8,
+        "max_uses": 16,
         "xp": 1
       }
     ],
@@ -28,13 +28,13 @@
           "count": 3
         },
         "sell": "minecraft:emerald",
-        "max_uses": 4,
+        "max_uses": 16,
         "xp": 4
       },
       {
         "buy_a": "minecraft:powder_snow_bucket",
         "sell": "minecraft:emerald",
-        "max_uses": 2,
+        "max_uses": 16,
         "xp": 10
       }
     ],
@@ -45,7 +45,7 @@
           "count": 6
         },
         "sell": "minecraft:emerald",
-        "max_uses": 8,
+        "max_uses": 16,
         "xp": 10
       },
       {
@@ -65,10 +65,10 @@
       {
         "buy_a": {
           "item": "minecraft:red_wool",
-          "count": 8
+          "count": 18
         },
         "sell": "minecraft:emerald",
-        "max_uses": 4,
+        "max_uses": 16,
         "xp": 20
       },
       {
@@ -95,6 +95,19 @@
           "count": 1
         },
         "max_uses": 15,
+        "xp": 30,
+        "price_multiplier": 0.2
+      },
+      {
+        "buy_a": {
+          "item": "minecraft:emerald",
+          "count": 25
+        },
+        "sell": {
+          "item": "morevillagers:xmas_chest",
+          "count": 2
+        },
+        "max_uses": 16,
         "xp": 30,
         "price_multiplier": 0.2
       },

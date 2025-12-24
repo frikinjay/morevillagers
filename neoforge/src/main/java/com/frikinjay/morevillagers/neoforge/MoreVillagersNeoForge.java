@@ -32,7 +32,7 @@ public final class MoreVillagersNeoForge {
         container.registerConfig(ModConfig.Type.COMMON, MVConfigNeoForge.COMMON_CONFIG);
 
         CommonPlatformHelperImpl.BLOCKS.register(modEventBus);
-
+        CommonPlatformHelperImpl.BLOCK_ENTITIES.register(modEventBus);
         CommonPlatformHelperImpl.ITEMS.register(modEventBus);
 
         modEventBus.addListener(this::addCreativeModeTab);

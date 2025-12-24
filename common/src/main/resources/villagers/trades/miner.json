@@ -15,7 +15,7 @@
         "buy_a": "minecraft:emerald",
         "sell": {
           "item": "minecraft:calcite",
-          "count": 16
+          "count": 5
         },
         "max_uses": 16,
         "xp": 1
@@ -109,7 +109,7 @@
           "item_type": "treasure_map",
           "structure_tag": "morevillagers:on_ancient_city_explorer_maps",
           "display_name": "filled_map.ancient_city",
-          "map_decoration": "minecraft:marker_blue"
+          "map_decoration": "morevillagers:ancient_city_decoration"
         },
         "max_uses": 12,
         "xp": 15

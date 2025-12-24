@@ -1,10 +1,13 @@
 package com.frikinjay.morevillagers.registry;
 
 import com.frikinjay.morevillagers.MoreVillagers;
+import com.frikinjay.morevillagers.blocks.XmasChestBlock;
+import com.frikinjay.morevillagers.blocks.entities.XmasChestBlockEntity;
 import com.frikinjay.morevillagers.platform.CommonPlatformHelper;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -24,6 +27,7 @@ public class MVBlocks {
     public static final ResourceKey<Block> MINING_BENCH_KEY = ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(MoreVillagers.MOD_ID, "mining_bench"));
     //public static final ResourceKey<Block> GILDED_STATION_KEY = ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(MoreVillagers.MOD_ID, "gilded_station"));
     public static final ResourceKey<Block> CHILLER_KEY = ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(MoreVillagers.MOD_ID, "chiller"));
+    public static final ResourceKey<Block> XMAS_CHEST_KEY = ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(MoreVillagers.MOD_ID, "xmas_chest"));
 
     public static final Supplier<Block> OCEANOGRAPHY_TABLE = registerBlock("oceanography_table", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CARTOGRAPHY_TABLE).setId(OCEANOGRAPHY_TABLE_KEY)));
     public static final Supplier<Block> WOODWORKING_TABLE = registerBlock("woodworking_table", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CARTOGRAPHY_TABLE).setId(WOODWORKING_TABLE_KEY)));
@@ -35,6 +39,8 @@ public class MVBlocks {
     public static final Supplier<Block> MINING_BENCH = registerBlock("mining_bench", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).setId(MINING_BENCH_KEY)));
     //public static final Supplier<Block> GILDED_STATION = registerBlock("gilded_station", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CARTOGRAPHY_TABLE).setId(GILDED_STATION_KEY)));
     public static final Supplier<Block> CHILLER = registerBlock("chiller", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CARTOGRAPHY_TABLE).setId(CHILLER_KEY)));
+
+    public static final Supplier<Block> XMAS_CHEST = registerBlock("xmas_chest", () -> new XmasChestBlock(SoundEvents.CHEST_OPEN, SoundEvents.CHEST_CLOSE, BlockBehaviour.Properties.ofFullCopy(Blocks.CHEST).setId(XMAS_CHEST_KEY)));
 
     public static <T extends Block> Supplier<T> registerBlock(String name, Supplier<T> block) {
         Supplier<T> toReturn = CommonPlatformHelper.registerBlock(name, block);

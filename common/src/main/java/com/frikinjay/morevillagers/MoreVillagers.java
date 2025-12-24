@@ -22,6 +22,7 @@ public class MoreVillagers
 
     public static void init() {
         MVBlocks.init();
+        MVBlockEntities.init();
     }
 
     public static void registerJigsaws(MinecraftServer server) {
