@@ -15,9 +15,9 @@
         "buy_a": "minecraft:emerald",
         "sell": {
           "item": "minecraft:oak_log",
-          "count": 6
+          "count": 1
         },
-        "max_uses": 16,
+        "max_uses": 64,
         "xp": 1
       },
       {
@@ -33,9 +33,9 @@
         "buy_a": "minecraft:emerald",
         "sell": {
           "item": "minecraft:birch_log",
-          "count": 6
+          "count": 1
         },
-        "max_uses": 16,
+        "max_uses": 64,
         "xp": 1
       }
     ],
@@ -53,9 +53,9 @@
         "buy_a": "minecraft:emerald",
         "sell": {
           "item": "minecraft:spruce_log",
-          "count": 6
+          "count": 1
         },
-        "max_uses": 16,
+        "max_uses": 64,
         "xp": 5
       },
       {
@@ -71,9 +71,9 @@
         "buy_a": "minecraft:emerald",
         "sell": {
           "item": "minecraft:dark_oak_log",
-          "count": 6
+          "count": 1
         },
-        "max_uses": 16,
+        "max_uses": 64,
         "xp": 5
       }
     ],
@@ -91,9 +91,9 @@
         "buy_a": "minecraft:emerald",
         "sell": {
           "item": "minecraft:acacia_log",
-          "count": 6
+          "count": 1
         },
-        "max_uses": 16,
+        "max_uses": 64,
         "xp": 10
       },
       {
@@ -109,9 +109,9 @@
         "buy_a": "minecraft:emerald",
         "sell": {
           "item": "minecraft:jungle_log",
-          "count": 6
+          "count": 1
         },
-        "max_uses": 16,
+        "max_uses": 64,
         "xp": 10
       }
     ],
@@ -120,18 +120,18 @@
         "buy_a": "minecraft:emerald",
         "sell": {
           "item": "minecraft:warped_stem",
-          "count": 6
+          "count": 1
         },
-        "max_uses": 16,
+        "max_uses": 64,
         "xp": 15
       },
       {
         "buy_a": "minecraft:emerald",
         "sell": {
           "item": "minecraft:crimson_stem",
-          "count": 6
+          "count": 1
         },
-        "max_uses": 16,
+        "max_uses": 64,
         "xp": 15
       }
     ],

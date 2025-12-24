@@ -5,11 +5,11 @@
       {
         "buy_a": {
           "item": "minecraft:map",
-          "count": 8
+          "count": 6
         },
         "sell": {
           "item": "minecraft:emerald",
-          "count": 12
+          "count": 1
         },
         "max_uses": 16,
         "xp": 2
@@ -29,7 +29,7 @@
           "display_name": "filled_map.ancient_city",
           "map_decoration": "morevillagers:ancient_city_decoration"
         },
-        "max_uses": 1,
+        "max_uses": 2,
         "xp": 5
       }
     ],
@@ -37,11 +37,11 @@
       {
         "buy_a": {
           "item": "minecraft:paper",
-          "count": 16
+          "count": 24
         },
         "sell": {
           "item": "minecraft:emerald",
-          "count": 16
+          "count": 1
         },
         "max_uses": 12,
         "xp": 5
@@ -86,10 +86,8 @@
           "count": 1,
           "components": {
             "minecraft:enchantments": {
-              "levels": {
-                "minecraft:feather_falling": 4,
-                "minecraft:depth_strider": 3
-              }
+              "minecraft:feather_falling": 4,
+              "minecraft:depth_strider": 3
             }
           }
         },

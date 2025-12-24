@@ -1,6 +1,7 @@
 package com.frikinjay.morevillagers.registry;
 
 import com.frikinjay.morevillagers.MoreVillagers;
+import com.frikinjay.morevillagers.blocks.XmasChestBlock;
 import com.frikinjay.morevillagers.platform.CommonPlatformHelper;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -12,7 +13,7 @@ import java.util.function.Supplier;
 
 public class MVBlocks {
     public static void init() {
-        MoreVillagers.LOGGER.info("More Villagers blocks registered: {},{},{},{},{},{},{},{},{},{}",
+        MoreVillagers.LOGGER.info("More Villagers blocks registered: {},{},{},{},{},{},{},{},{},{},{}",
                 OCEANOGRAPHY_TABLE.toString(),
                 WOODWORKING_TABLE.toString(),
                 DECAYED_WORKBENCH.toString(),
@@ -22,7 +23,8 @@ public class MVBlocks {
                 HUNTING_POST.toString(),
                 MINING_BENCH.toString(),
                 GILDED_STATION.toString(),
-                CHILLER.toString()
+                CHILLER.toString(),
+                XMAS_CHEST.toString()
         );
     }
 
@@ -36,6 +38,8 @@ public class MVBlocks {
     public static final Supplier<Block> MINING_BENCH = registerBlock("mining_bench", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
     public static final Supplier<Block> GILDED_STATION = registerBlock("gilded_station", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CARTOGRAPHY_TABLE)));
     public static final Supplier<Block> CHILLER = registerBlock("chiller", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CARTOGRAPHY_TABLE)));
+
+    public static final Supplier<Block> XMAS_CHEST = registerBlock("xmas_chest", () -> new XmasChestBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CHEST)));
 
     public static <T extends Block> Supplier<T> registerBlock(String name, Supplier<T> block) {
         Supplier<T> toReturn = CommonPlatformHelper.registerBlock(name, block);
